@@ -1,0 +1,9 @@
+menu "GLS"
+
+    config GLS_ENABLE
+        bool "Enable GLS"
+        default "y"
+        help
+            GLS lib by ahu university.
+
+endmenu
