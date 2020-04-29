@@ -1,7 +1,7 @@
 src/hal/ledc_hal.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/src/hal/ledc_hal.c \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/hal/ledc_hal.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/hal/ledc_ll.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/hal/ledc_types.h \
@@ -16,7 +16,7 @@ src/hal/ledc_hal.o: \
 
 /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/soc/include/hal/ledc_hal.h:
 

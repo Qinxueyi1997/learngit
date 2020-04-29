@@ -10,7 +10,7 @@ esp32/spi_periph.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h
 
 /home/qinxueyi/esp/esp-idf/components/soc/include/soc/spi_periph.h:
 
@@ -32,5 +32,5 @@ esp32/spi_periph.o: \
 
 /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
 /home/qinxueyi/esp/esp-idf/components/soc/esp32/spi_periph.c:

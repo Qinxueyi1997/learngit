@@ -1,7 +1,7 @@
 port/esp_sha.o: \
  /home/qinxueyi/esp/esp-idf/components/mbedtls/port/esp_sha.c \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/mbedtls/port/include/esp32/sha.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/sha.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_types.h \
@@ -19,7 +19,7 @@ port/esp_sha.o: \
 
 /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/mbedtls/port/include/esp32/sha.h:
 

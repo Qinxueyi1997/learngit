@@ -14,7 +14,7 @@ esp32/touch_sensor_hal.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/sens_struct.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_struct.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/hal/touch_sensor_types.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/hal/touch_sensor_hal_esp32.h
 
 /home/qinxueyi/esp/esp-idf/components/soc/include/hal/touch_sensor_hal.h:
@@ -45,7 +45,7 @@ esp32/touch_sensor_hal.o: \
 
 /home/qinxueyi/esp/esp-idf/components/soc/include/hal/touch_sensor_types.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/hal/touch_sensor_hal_esp32.h:
 /home/qinxueyi/esp/esp-idf/components/soc/esp32/touch_sensor_hal.c:

@@ -1,7 +1,7 @@
 esp32/rtc_clk.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/rtc_clk.c \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/rtc.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
@@ -64,7 +64,7 @@ esp32/rtc_clk.o: \
 
 /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/rtc.h:
 

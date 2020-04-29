@@ -1,7 +1,7 @@
 wifi_sntp.o: \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/main/wifi_sntp.c \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/main/wifi_sntp.c \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/qinxueyi/esp/esp-idf/components/lwip/lwip/src/include/lwip/err.h \
@@ -78,12 +78,12 @@ wifi_sntp.o: \
  /home/qinxueyi/esp/esp-idf/components/lwip/lwip/src/include/lwip/sys.h \
  /home/qinxueyi/esp/esp-idf/components/lwip/lwip/src/include/lwip/netdb.h \
  /home/qinxueyi/esp/esp-idf/components/lwip/lwip/src/include/lwip/dns.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/main/wifi_sntp.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/main/device_wifi.h
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/main/wifi_sntp.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/main/device_wifi.h
 
 /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
@@ -237,7 +237,7 @@ wifi_sntp.o: \
 
 /home/qinxueyi/esp/esp-idf/components/lwip/lwip/src/include/lwip/dns.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/main/wifi_sntp.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/main/wifi_sntp.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/main/device_wifi.h:
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/main/./wifi_sntp.c:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/main/device_wifi.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/main/./wifi_sntp.c:

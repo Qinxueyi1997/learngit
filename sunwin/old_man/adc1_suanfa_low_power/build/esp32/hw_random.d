@@ -1,6 +1,6 @@
 hw_random.o: /home/qinxueyi/esp/esp-idf/components/esp32/hw_random.c \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp32/include/esp32/clk.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/wdev_reg.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
@@ -23,7 +23,7 @@ hw_random.o: /home/qinxueyi/esp/esp-idf/components/esp32/hw_random.c \
 
 /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp32/include/esp32/clk.h:
 

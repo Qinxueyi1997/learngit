@@ -1,6 +1,6 @@
 src/flash_encrypt.o: \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log_internal.h \
@@ -19,7 +19,7 @@ src/flash_encrypt.o: \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/include/esp_secure_boot.h
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h:
 

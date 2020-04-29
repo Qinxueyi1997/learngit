@@ -1,5 +1,5 @@
 intr_alloc.o: /home/qinxueyi/esp/esp-idf/components/esp32/intr_alloc.c \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -44,7 +44,7 @@ intr_alloc.o: /home/qinxueyi/esp/esp-idf/components/esp32/intr_alloc.c \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_ipc.h
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

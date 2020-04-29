@@ -2,7 +2,7 @@ src/common/wpa_common.o: \
  /home/qinxueyi/esp/esp-idf/components/wpa_supplicant/src/common/wpa_common.c \
  /home/qinxueyi/esp/esp-idf/components/wpa_supplicant/src/utils/includes.h \
  /home/qinxueyi/esp/esp-idf/components/wpa_supplicant/port/include/supplicant_opt.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/qinxueyi/esp/esp-idf/components/wpa_supplicant/src/utils/common.h \
  /home/qinxueyi/esp/esp-idf/components/wpa_supplicant/port/include/os.h \
@@ -36,7 +36,7 @@ src/common/wpa_common.o: \
 
 /home/qinxueyi/esp/esp-idf/components/wpa_supplicant/port/include/supplicant_opt.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 

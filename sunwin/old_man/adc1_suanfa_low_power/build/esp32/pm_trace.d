@@ -1,6 +1,6 @@
 pm_trace.o: /home/qinxueyi/esp/esp-idf/components/esp32/pm_trace.c \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_private/pm_trace.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/driver/include/driver/gpio.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -31,7 +31,7 @@ pm_trace.o: /home/qinxueyi/esp/esp-idf/components/esp32/pm_trace.c \
 
 /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_private/pm_trace.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/driver/include/driver/gpio.h:
 

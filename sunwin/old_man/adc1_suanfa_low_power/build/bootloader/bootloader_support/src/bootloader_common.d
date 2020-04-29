@@ -1,6 +1,6 @@
 src/bootloader_common.o: \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/src/bootloader_common.c \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
@@ -40,7 +40,7 @@ src/bootloader_common.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/efuse_reg.h \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_sha.h
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h:
 

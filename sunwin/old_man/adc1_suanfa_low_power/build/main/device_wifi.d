@@ -1,9 +1,9 @@
 device_wifi.o: \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/main/device_wifi.c \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/main/device_wifi.c \
  /home/qinxueyi/esp/esp-idf/components/esp_wifi/include/esp_wifi.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
  /home/qinxueyi/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_types_private.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_interface.h \
@@ -121,7 +121,7 @@ device_wifi.o: \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/event_groups.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/timers.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/task.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/main/device_wifi.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/main/device_wifi.h \
  /home/qinxueyi/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
  /home/qinxueyi/esp/esp-idf/components/nvs_flash/include/nvs.h \
  /home/qinxueyi/esp/esp-idf/components/spi_flash/include/esp_partition.h \
@@ -138,7 +138,7 @@ device_wifi.o: \
 
 /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h:
 
@@ -374,7 +374,7 @@ device_wifi.o: \
 
 /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/task.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/main/device_wifi.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/main/device_wifi.h:
 
 /home/qinxueyi/esp/esp-idf/components/nvs_flash/include/nvs_flash.h:
 
@@ -393,4 +393,4 @@ device_wifi.o: \
 /home/qinxueyi/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
 /home/qinxueyi/esp/esp-idf/components/nvs_flash/include/nvs.h:
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/main/./device_wifi.c:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/main/./device_wifi.c:

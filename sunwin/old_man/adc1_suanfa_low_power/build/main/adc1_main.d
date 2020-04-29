@@ -1,11 +1,11 @@
 adc1_main.o: \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/main/adc1_main.c \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/main/adc1_main.c \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/time.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/sys/time.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/sys/unistd.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
@@ -187,8 +187,8 @@ adc1_main.o: \
  /home/qinxueyi/esp/esp-idf/components/esp_http_client/include/esp_http_client.h \
  /home/qinxueyi/esp/esp-idf/components/nghttp/port/include/http_parser.h \
  /home/qinxueyi/esp/esp-idf/components/json/cJSON/cJSON.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/main/device_wifi.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/main/wifi_sntp.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/main/device_wifi.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/main/wifi_sntp.h \
  /home/qinxueyi/esp/esp-idf/components/esp32/include/esp_sleep.h \
  /home/qinxueyi/esp/esp-idf/components/driver/include/driver/touch_pad.h \
  /home/qinxueyi/esp/esp-idf/components/driver/include/driver/touch_sensor_common.h \
@@ -237,7 +237,7 @@ adc1_main.o: \
 
 /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -601,9 +601,9 @@ adc1_main.o: \
 
 /home/qinxueyi/esp/esp-idf/components/json/cJSON/cJSON.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/main/device_wifi.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/main/device_wifi.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/main/wifi_sntp.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/main/wifi_sntp.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp32/include/esp_sleep.h:
 
@@ -678,4 +678,4 @@ adc1_main.o: \
 /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/rtc.h:
 
 /home/qinxueyi/esp/esp-idf/components/soc/include/soc/rtc_periph.h:
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/main/./adc1_main.c:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/main/./adc1_main.c:

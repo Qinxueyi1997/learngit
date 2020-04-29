@@ -1,7 +1,7 @@
 esp_app_desc.o: \
  /home/qinxueyi/esp/esp-idf/components/app_update/esp_app_desc.c \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/app_update/include/esp_ota_ops.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/spi_flash/include/esp_partition.h \
@@ -17,7 +17,7 @@ esp_app_desc.o: \
 
 /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/app_update/include/esp_ota_ops.h:
 

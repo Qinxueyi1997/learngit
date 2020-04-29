@@ -3,7 +3,7 @@ src/wifi_default.o: \
  /home/qinxueyi/esp/esp-idf/components/esp_wifi/include/esp_wifi.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
  /home/qinxueyi/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_types_private.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_interface.h \
@@ -113,7 +113,7 @@ src/wifi_default.o: \
 
 /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h:
 

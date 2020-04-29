@@ -1,7 +1,7 @@
 i2c.o: /home/qinxueyi/esp/esp-idf/components/driver/i2c.c \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -87,7 +87,7 @@ i2c.o: /home/qinxueyi/esp/esp-idf/components/driver/i2c.c \
 
 /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 

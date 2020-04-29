@@ -1,7 +1,7 @@
 src/esp_eth_netif_glue.o: \
  /home/qinxueyi/esp/esp-idf/components/esp_eth/src/esp_eth_netif_glue.c \
  /home/qinxueyi/esp/esp-idf/components/esp_netif/include/esp_netif.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
  /home/qinxueyi/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_types_private.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
@@ -99,7 +99,7 @@ src/esp_eth_netif_glue.o: \
 
 /home/qinxueyi/esp/esp-idf/components/esp_netif/include/esp_netif.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h:
 

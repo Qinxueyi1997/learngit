@@ -1,7 +1,7 @@
 src/eap_peer/eap_mschapv2.o: \
  /home/qinxueyi/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_mschapv2.c \
  /home/qinxueyi/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/qinxueyi/esp/esp-idf/components/wpa_supplicant/src/utils/common.h \
  /home/qinxueyi/esp/esp-idf/components/wpa_supplicant/port/include/os.h \
@@ -44,7 +44,7 @@ src/eap_peer/eap_mschapv2.o: \
 
 /home/qinxueyi/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 

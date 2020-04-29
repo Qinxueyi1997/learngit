@@ -2,7 +2,7 @@ app_trace.o: /home/qinxueyi/esp/esp-idf/components/app_trace/app_trace.c \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
@@ -56,7 +56,7 @@ app_trace.o: /home/qinxueyi/esp/esp-idf/components/app_trace/app_trace.c \
 
 /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 

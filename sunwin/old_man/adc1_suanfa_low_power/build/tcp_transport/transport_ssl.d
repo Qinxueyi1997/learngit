@@ -2,7 +2,7 @@ transport_ssl.o: \
  /home/qinxueyi/esp/esp-idf/components/tcp_transport/transport_ssl.c \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
@@ -124,7 +124,7 @@ transport_ssl.o: \
 
 /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

@@ -6,7 +6,7 @@ lwip/src/api/sockets.o: \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/sys/time.h \
  /home/qinxueyi/esp/esp-idf/components/vfs/include/sys/ioctl.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_task.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
@@ -111,7 +111,7 @@ lwip/src/api/sockets.o: \
 
 /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_task.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 

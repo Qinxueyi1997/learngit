@@ -1,6 +1,6 @@
 sdmmc_host.o: /home/qinxueyi/esp/esp-idf/components/driver/sdmmc_host.c \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/qinxueyi/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
@@ -65,7 +65,7 @@ sdmmc_host.o: /home/qinxueyi/esp/esp-idf/components/driver/sdmmc_host.c \
 
 /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 

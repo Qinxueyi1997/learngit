@@ -2,7 +2,7 @@ mdns_console.o: /home/qinxueyi/esp/esp-idf/components/mdns/mdns_console.c \
  /home/qinxueyi/esp/esp-idf/components/console/esp_console.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/console/argtable3/argtable3.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/time.h \
  /home/qinxueyi/esp/esp-idf/components/mdns/include/mdns.h \
@@ -103,7 +103,7 @@ mdns_console.o: /home/qinxueyi/esp/esp-idf/components/mdns/mdns_console.c \
 
 /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/console/argtable3/argtable3.h:
 

@@ -1,6 +1,6 @@
 locks.o: /home/qinxueyi/esp/esp-idf/components/newlib/locks.c \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/cpu.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/xtensa/corebits.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
@@ -42,7 +42,7 @@ locks.o: /home/qinxueyi/esp/esp-idf/components/newlib/locks.c \
 
 /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/cpu.h:
 

@@ -5,7 +5,7 @@ src/esp32/flash_encrypt.o: \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_types.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/include/esp_app_format.h \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/include/esp_flash_encrypt.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h \
@@ -64,7 +64,7 @@ src/esp32/flash_encrypt.o: \
 
 /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_types.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/bootloader_support/include/esp_app_format.h:
 

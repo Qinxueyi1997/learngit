@@ -1,6 +1,6 @@
 esp_flash_spi_init.o: \
  /home/qinxueyi/esp/esp-idf/components/spi_flash/esp_flash_spi_init.c \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/spi_flash/include/esp_flash.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -55,7 +55,7 @@ esp_flash_spi_init.o: \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h \
  /home/qinxueyi/esp/esp-idf/components/spi_flash/include/esp_flash_internal.h
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/spi_flash/include/esp_flash.h:
 

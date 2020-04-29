@@ -1,6 +1,6 @@
 log_buffers.o: /home/qinxueyi/esp/esp-idf/components/log/log_buffers.c \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h \
@@ -11,7 +11,7 @@ log_buffers.o: /home/qinxueyi/esp/esp-idf/components/log/log_buffers.c \
 
 /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 

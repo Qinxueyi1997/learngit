@@ -1,7 +1,7 @@
 src/esp32/secure_boot.o: \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/src/esp32/secure_boot.c \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
@@ -55,7 +55,7 @@ src/esp32/secure_boot.o: \
 
 /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_types.h:
 

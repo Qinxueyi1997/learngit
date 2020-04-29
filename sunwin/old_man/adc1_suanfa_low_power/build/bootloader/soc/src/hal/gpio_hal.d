@@ -17,7 +17,7 @@ src/hal/gpio_hal.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/include/hal/gpio_types.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h
 
 /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 
@@ -53,5 +53,5 @@ src/hal/gpio_hal.o: \
 
 /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
 /home/qinxueyi/esp/esp-idf/components/soc/src/hal/gpio_hal.c:

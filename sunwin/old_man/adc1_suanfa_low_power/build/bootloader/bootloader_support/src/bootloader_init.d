@@ -1,6 +1,6 @@
 src/bootloader_init.o: \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/src/bootloader_init.c \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log_internal.h \
@@ -56,7 +56,7 @@ src/bootloader_init.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/soc/rtc_wdt.h
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h:
 

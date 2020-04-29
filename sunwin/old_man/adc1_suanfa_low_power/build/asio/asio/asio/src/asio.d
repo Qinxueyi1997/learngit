@@ -3,7 +3,7 @@ asio/asio/src/asio.o: \
  /home/qinxueyi/esp/esp-idf/components/asio/asio/asio/include/asio/impl/src.hpp \
  /home/qinxueyi/esp/esp-idf/components/asio/asio/asio/include/asio/detail/config.hpp \
  /home/qinxueyi/esp/esp-idf/components/asio/port/include/esp_asio_config.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/asio/asio/asio/include/asio/impl/error.ipp \
  /home/qinxueyi/esp/esp-idf/components/asio/asio/asio/include/asio/error.hpp \
  /home/qinxueyi/esp/esp-idf/components/asio/asio/asio/include/asio/error_code.hpp \
@@ -302,7 +302,7 @@ asio/asio/src/asio.o: \
 
 /home/qinxueyi/esp/esp-idf/components/asio/port/include/esp_asio_config.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/asio/asio/asio/include/asio/impl/error.ipp:
 

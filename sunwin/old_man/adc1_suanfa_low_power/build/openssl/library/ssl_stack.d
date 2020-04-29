@@ -8,7 +8,7 @@ library/ssl_stack.o: \
  /home/qinxueyi/esp/esp-idf/components/openssl/include/internal/x509_vfy.h \
  /home/qinxueyi/esp/esp-idf/components/openssl/include/internal/ssl_dbg.h \
  /home/qinxueyi/esp/esp-idf/components/openssl/include/platform/ssl_opt.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/openssl/include/platform/ssl_port.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h \
@@ -32,7 +32,7 @@ library/ssl_stack.o: \
 
 /home/qinxueyi/esp/esp-idf/components/openssl/include/platform/ssl_opt.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/openssl/include/platform/ssl_port.h:
 

@@ -1,6 +1,6 @@
 heap_caps.o: /home/qinxueyi/esp/esp-idf/components/heap/heap_caps.c \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/qinxueyi/esp/esp-idf/components/heap/include/esp_heap_caps.h \
  /home/qinxueyi/esp/esp-idf/components/heap/include/multi_heap.h \
@@ -43,7 +43,7 @@ heap_caps.o: /home/qinxueyi/esp/esp-idf/components/heap/heap_caps.c \
 
 /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h:
 

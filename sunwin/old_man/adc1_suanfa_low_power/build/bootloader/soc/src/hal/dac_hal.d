@@ -28,7 +28,7 @@ src/hal/dac_hal.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/dac_channel.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/dac_caps.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/hal/dac_types.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/hal/hal_defs.h \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
@@ -91,7 +91,7 @@ src/hal/dac_hal.o: \
 
 /home/qinxueyi/esp/esp-idf/components/soc/include/hal/dac_types.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/bootloader/../include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/soc/include/hal/hal_defs.h:
 

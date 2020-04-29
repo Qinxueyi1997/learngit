@@ -1,5 +1,5 @@
 spi_slave.o: /home/qinxueyi/esp/esp-idf/components/driver/spi_slave.c \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/hal/spi_ll.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/hal/hal_defs.h \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h \
@@ -81,7 +81,7 @@ spi_slave.o: /home/qinxueyi/esp/esp-idf/components/driver/spi_slave.c \
  /home/qinxueyi/esp/esp-idf/components/driver/include/driver/gpio.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/hal/spi_ll.h:
 

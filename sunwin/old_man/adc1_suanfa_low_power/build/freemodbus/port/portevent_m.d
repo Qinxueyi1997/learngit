@@ -2,7 +2,7 @@ port/portevent_m.o: \
  /home/qinxueyi/esp/esp-idf/components/freemodbus/port/portevent_m.c \
  /home/qinxueyi/esp/esp-idf/components/freemodbus/modbus/include/mb_m.h \
  /home/qinxueyi/esp/esp-idf/components/freemodbus/modbus/include/mbconfig.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/freemodbus/port/port.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
@@ -74,7 +74,7 @@ port/portevent_m.o: \
 
 /home/qinxueyi/esp/esp-idf/components/freemodbus/modbus/include/mbconfig.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/freemodbus/port/port.h:
 

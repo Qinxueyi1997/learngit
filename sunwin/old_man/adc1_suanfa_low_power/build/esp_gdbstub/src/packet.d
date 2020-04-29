@@ -14,7 +14,7 @@ src/packet.o: \
  /home/qinxueyi/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
  /home/qinxueyi/esp/esp-idf/components/esp_gdbstub/esp32/gdbstub_target_config.h \
- /home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h
+ /home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h
 
 /home/qinxueyi/esp/esp-idf/components/esp_gdbstub/private_include/esp_gdbstub_common.h:
 
@@ -44,5 +44,5 @@ src/packet.o: \
 
 /home/qinxueyi/esp/esp-idf/components/esp_gdbstub/esp32/gdbstub_target_config.h:
 
-/home/qinxueyi/esp/esp-idf/examples/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/old_man/adc1_suanfa_low_power/build/include/sdkconfig.h:
 /home/qinxueyi/esp/esp-idf/components/esp_gdbstub/src/packet.c:
