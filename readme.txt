@@ -1,7 +1,7 @@
-version control system.
-Git is free software distributedunder software.
-Git has a mutable index called stage.
-Git tracks changes.
-My stupid boss still prefers SVN.
-creating a new branch is quick
-creating a new branch is quick & simple
+赛为智能有限公司
+项目：智慧医疗护理
+小组：护理床项目组
+开始时间：2019.12.25
+github 内容
+一、成人版
+二、儿童版
