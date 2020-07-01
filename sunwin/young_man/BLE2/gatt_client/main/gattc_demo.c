@@ -5,9 +5,6 @@
    software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
    CONDITIONS OF ANY KIND, either express or implied.
 */
-
-
-
 /****************************************************************************
 *
 * This demo showcases BLE GATT client. It can scan BLE devices and connect to one device.
@@ -16,7 +13,6 @@
 * data.
 *
 ****************************************************************************/
-
 #include <stdint.h>
 #include <string.h>
 #include <stdbool.h>
@@ -44,7 +40,6 @@
 #include "driver/adc.h"
 #include "driver/i2c.h"
 #include "driver/uart.h"
-
 #include "esp_system.h"
 #include "esp_attr.h"
 #include "esp_event.h"
@@ -88,7 +83,6 @@
 #define SHT30_WRITE_ADDR    0x44                //地址 
 #define CMD_FETCH_DATA_H    0x22                //循环采样，参考sht30 datasheet
 #define CMD_FETCH_DATA_L    0x36
-
 #define CID_ESP 0x02E5
 //uart  gpio引脚
 #define TXD_PIN (GPIO_NUM_4)
@@ -100,7 +94,7 @@
 #define PROFILE_NUM      1
 #define PROFILE_A_APP_ID 0
 #define INVALID_HANDLE   0
-#define webaddress  "http://112.95.150.108:20005/originalMonitor.action"
+static SemaphoreHandle_t gattc_semaphore;
 const char *webaddress1[3]={"http://112.95.150.108:20005/originalMonitor.action","http://112.95.150.108:20005/monitor.action",0};
 unsigned char sht30_buf[6]={0}; //温湿度变量
 float g_temp=0.0, g_rh=0.0,pm=0.0;
@@ -137,7 +131,6 @@ static const char *NVS_CUSTOMER = "customer data";
 static const char *DATA1= "param 1";
 int  HTTP_Send_Data[20]={0};
 float environment[3]={0};
-
 static const char remote_device_name[] = "ESP_GATTS_DEMO";
 static bool connect1    = false;
 static bool get_server = false;
@@ -149,23 +142,18 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
 static void esp_gattc_cb(esp_gattc_cb_event_t event, esp_gatt_if_t gattc_if, esp_ble_gattc_cb_param_t *param);
 static void gattc_profile_event_handler(esp_gattc_cb_event_t event, esp_gatt_if_t gattc_if, esp_ble_gattc_cb_param_t *param);
 uint8_t i=0;
-
-
 static esp_bt_uuid_t remote_filter_service_uuid = {
     .len = ESP_UUID_LEN_16,
     .uuid = {.uuid16 = REMOTE_SERVICE_UUID,},
 };
-
 static esp_bt_uuid_t remote_filter_char_uuid = {
     .len = ESP_UUID_LEN_16,
     .uuid = {.uuid16 = REMOTE_NOTIFY_CHAR_UUID,},
 };
-
 static esp_bt_uuid_t notify_descr_uuid = {
     .len = ESP_UUID_LEN_16,
     .uuid = {.uuid16 = ESP_GATT_UUID_CHAR_CLIENT_CONFIG,},
 };
-
 static esp_ble_scan_params_t ble_scan_params = {
     .scan_type              = BLE_SCAN_TYPE_ACTIVE,
     .own_addr_type          = BLE_ADDR_TYPE_PUBLIC,
@@ -174,7 +162,6 @@ static esp_ble_scan_params_t ble_scan_params = {
     .scan_window            = 0x30,
     .scan_duplicate         = BLE_SCAN_DUPLICATE_DISABLE
 };
-
 struct gattc_profile_inst {
     esp_gattc_cb_t gattc_cb;//gatt客户端回调回调函数
     uint16_t gattc_if;//此文配置Gatt客户端接口号
@@ -185,14 +172,7 @@ struct gattc_profile_inst {
     uint16_t char_handle;//字符处理
     esp_bd_addr_t remote_bda;//链接到此客户的远程设备地址
 };
-/*
-* IIC初始化
-* @param[in]   void  		       :无
-* @retval      void                :无
-* @note        修改日志 
-*   
-*/
-
+/*IIC初始化*/
 void i2c_init(void)
 {
 	//i2c配置结构体
@@ -528,7 +508,6 @@ static void initialise_wifi(void)
     wifi_event_group = xEventGroupCreate();//创建一个事件组
      s_wifi_event_group = xEventGroupCreate();
     ESP_ERROR_CHECK(esp_netif_init());
-    
     ESP_ERROR_CHECK(esp_event_loop_create_default());//wifi事件
     esp_netif_t *sta_netif = esp_netif_create_default_wifi_sta();
     assert(sta_netif);
@@ -565,7 +544,6 @@ static void initialise_wifi(void)
     struct tm timeinfo;
     time(&now);
     localtime_r(&now, &timeinfo);
-
     // Is time set? If not, tm_year will be (1970 - 1900).
      if (timeinfo.tm_year < (2016 - 1900)) {
         ESP_LOGI(TAGTIME, "Time is not set yet. Connecting to WiFi and getting time over NTP.");
@@ -574,7 +552,6 @@ static void initialise_wifi(void)
         time(&now);
     }
     char strftime_buf[64];
-    // Set timezone to China Standard Time
     setenv("TZ", "CST-8", 1);
     tzset();
     localtime_r(&now, &timeinfo);
@@ -582,7 +559,6 @@ static void initialise_wifi(void)
     ESP_LOGI(TAGTIME, "The current date/time in hefei is: %s", strftime_buf);
 /**************************wsntp时间戳初始化结束************************************/
     } else if (bits & WIFI_FAIL_BIT) {
-
     } else {
         ESP_LOGE(TAG, "UNEXPECTED EVENT"); 
     }
@@ -590,7 +566,6 @@ static void initialise_wifi(void)
     ESP_ERROR_CHECK(esp_event_handler_unregister(WIFI_EVENT, ESP_EVENT_ANY_ID, &event_handler));
   //   xTaskCreate(&adc1_get_data_task, "adc1_get_data_task", 8192, NULL, 5, NULL);
     vEventGroupDelete(s_wifi_event_group);
-
 }
 /*smartconfig任务*/
 void smartconfig_example_task(void *parm)
@@ -621,7 +596,6 @@ void smartconfig_example_task(void *parm)
 }
 /******************smartconfig   over************************************************/
 /************************************************************************************/
-
 /* One gatt-based profile one app_id and one gattc_if, this array will store the gattc_if returned by ESP_GATTS_REG_EVT */
 static struct gattc_profile_inst gl_profile_tab[PROFILE_NUM] = {
     [PROFILE_A_APP_ID] = {
@@ -849,6 +823,8 @@ static void gattc_profile_event_handler(esp_gattc_cb_event_t event, esp_gatt_if_
         connect1 = false;
         get_server = false;
         ESP_LOGI(GATTC_TAG, "ESP_GATTC_DISCONNECT_EVT, reason = %d", p_data->disconnect.reason);
+            uint32_t duration = 30;
+            esp_ble_gap_start_scanning(duration);//开始扫描
         break;
     default:
         break;
@@ -872,13 +848,14 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
             ESP_LOGE(GATTC_TAG, "scan start failed, error status = %x", param->scan_start_cmpl.status);
             break;
         }
-        ESP_LOGI(GATTC_TAG, "scan start success");
+        ESP_LOGI(GATTC_TAG, "scan start success");//开始扫描
 
         break;
     case ESP_GAP_BLE_SCAN_RESULT_EVT: {//扫描结果
         esp_ble_gap_cb_param_t *scan_result = (esp_ble_gap_cb_param_t *)param;
         switch (scan_result->scan_rst.search_evt) {
         case ESP_GAP_SEARCH_INQ_RES_EVT://查找所有发出广播的设备
+            vTaskDelay(1000 / portTICK_PERIOD_MS);
             esp_log_buffer_hex(GATTC_TAG, scan_result->scan_rst.bda, 6);
             ESP_LOGI(GATTC_TAG, "searched Adv Data Len %d, Scan Response Len %d", scan_result->scan_rst.adv_data_len, scan_result->scan_rst.scan_rsp_len);
             adv_name = esp_ble_resolve_adv_data(scan_result->scan_rst.ble_adv,
@@ -886,7 +863,8 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
             ESP_LOGI(GATTC_TAG, "searched Device Name Len %d", adv_name_len);
             esp_log_buffer_char(GATTC_TAG, adv_name, adv_name_len);
 
-#if CONFIG_EXAMPLE_DUMP_ADV_DATA_AND_SCAN_RESP
+//#if CONFIG_EXAMPLE_DUMP_ADV_DATA_AND_SCAN_RESP
+#if 1
             if (scan_result->scan_rst.adv_data_len > 0) {
                 ESP_LOGI(GATTC_TAG, "adv data:");
                 esp_log_buffer_hex(GATTC_TAG, &scan_result->scan_rst.ble_adv[0], scan_result->scan_rst.adv_data_len);
@@ -910,7 +888,7 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
                 }
             }
             break;
-        case ESP_GAP_SEARCH_INQ_CMPL_EVT:
+        case ESP_GAP_SEARCH_INQ_CMPL_EVT://可以用重新启动扫描 
             break;
         default:
             break;
@@ -1102,7 +1080,7 @@ void app_main(void)
     }
      xTaskCreate(&peripheral_init, "peripheral", 4096, NULL, 5, NULL);
      xTaskCreate(&throughput_client_task, "throughput_client_task", 4096, NULL, 10, NULL);
-#if (CONFIG_GATTC_WRITE_THROUGHPUT)
+#if (1)
     gattc_semaphore = xSemaphoreCreateBinary();
     if (!gattc_semaphore) {
         ESP_LOGE(GATTC_TAG, "%s, init fail, the gattc semaphore create fail.", __func__);
