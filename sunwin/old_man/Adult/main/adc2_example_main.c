@@ -554,6 +554,7 @@ static void adc1_get_data_task(void *pvParameters)
     double event_type_vec;
     int out_num = 0;
     double	max_value_index[2] = {0.,0.};
+
        gpio_set_level(LED_G_IO, 0);
         while(1) {  
         event_type_vec = 0;
@@ -610,6 +611,12 @@ static void adc1_get_data_task(void *pvParameters)
              continue;
              time1 = 0;
            //printf("%llu      %d      %d      %d  \n", data_index, read_raw1,read_raw2, read_raw3 );
+         	if(data_index <= N_seg){
+            X_X[begin1] = read_raw1 - read_raw3;
+            Pr_X[begin1] = read_raw2;
+            begin1++;
+	    	}
+            if(data_index > N_seg){
             X_X_2[begin2] = read_raw1 - read_raw3; //压电
             Pr_X_2[begin2] = read_raw2; //压阻
             begin2++;
@@ -617,7 +624,7 @@ static void adc1_get_data_task(void *pvParameters)
              clock_t start, finish;//计算算法的时间
             double  duration;
             start = clock();
-             begin2 = 0;
+            begin2 = 0;
             begin3 = 0;
              Data_transfer(X_X_heart_2, X_X_heart, 0,N_heart - N_heart_1);
 			//拼凑前7.5秒和当前2.5秒的数据
@@ -643,7 +650,7 @@ static void adc1_get_data_task(void *pvParameters)
             //计算压阻绝对值之和
             seg_pre_abssum = onearray_sum_fabs(Pr_X,N_seg);
             //计算能量值
-            seg_energy = accumulate1(a2_resp,N_seg,N_seg);
+    
             //离床判断
             if(seg_pre_abssum < 200)
              {
@@ -688,37 +695,45 @@ static void adc1_get_data_task(void *pvParameters)
                  xSemaphoreGive(adc_semaphore);
                     continue;
                 }
+                	//计算压阻一阶导数绝对值的和
+				double * out_diff = (double *)malloc(N_seg*sizeof(double));
+				diff_fabs(Pr_X,N_seg,out_diff,&out_num);
+				pr_diff = onearray_sum(out_diff,out_num);
+				free(out_diff);out_diff = NULL;
+				if(pr_diff >= 1000){
+					printf("there is body movement\n");
+					//清理之前分配的内存
+					free(a2_resp);a2_resp = NULL;
+					//free(a2_heart);a2_heart = NULL;
+					finish = clock();
+					duration = (double)(finish - start) / CLOCKS_PER_SEC;
+					//printf( "\n算法时间：%f seconds\n", duration );
+                      HTTP_Body_Data[1]=0;
+                     HTTP_Body_Data[2]=0;
+                     HTTP_Body_Data[0]=8;
+                      http_data_type_flag=2;
+                 xSemaphoreGive(adc_semaphore);
+					continue;
+				}
                 //计算呼吸频率
                 resp_value = obtain_resprate_with_max_possibility(a2_resp,N_seg);
                 //计算心率
                 heart_value = obtain_heart_by_spec(X_X_heart,N_heart);
                 //计算压阻一阶导数绝对值的和
-                double * out_diff = (double *)malloc(N_seg*sizeof(double));
-    			diff_fabs(Pr_X,N_seg,out_diff,&out_num);
-    			pr_diff = onearray_sum(out_diff,out_num);
-    			free(out_diff);out_diff = NULL;
-
-                //计算压电信号最大值
-    			max_v_interval_fabs(X_X,max_value_index,N_seg);
-    			absmax = max_value_index[0];
-
-                //清理加输出
-                free(a2_resp);a2_resp = NULL;
+                	//清理加输出
+				free(a2_resp);a2_resp = NULL;
                 printf("resp_value = %f,heart_value = %f\n",resp_value,heart_value);
-                HTTP_Body_Data[0]=6;
-                 if(pr_diff >= 1000){
-                printf("there is body movement\n");
-                HTTP_Body_Data[0]=8;
-                }
+
                 HTTP_Body_Data[1]=(int)resp_value;
                 HTTP_Body_Data[2]=(int)heart_value;
-    
+                HTTP_Body_Data[0]=6;
                  http_data_type_flag=2;
                  xSemaphoreGive(adc_semaphore);
                 finish = clock();
                 duration = (double)(finish - start) / CLOCKS_PER_SEC;
                 printf( "\n suanfatime:%f seconds\n", duration );
             }        
+        }
     }
     free(X_X); X_X = NULL;
     free(Pr_X); Pr_X = NULL;
