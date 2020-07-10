@@ -56,18 +56,21 @@
 #include "soc/sens_periph.h"
 #include "soc/rtc.h"
 #include "sdkconfig.h"
+void make_further_polishment( double absmax,
+                                         double *p_resp_value, double *p_heart_value,
+                                            int *p_resp_exception_counter, int *p_heart_exception_counter,
+                                            history_statistics hist_stat_arr[], uint8_t arr_size, uint8_t front_pos);
 /*******低功耗相关头文件********/
 #define   SAVE_POWER_WAIT_TIME    300//5分钟
 
 #define LED_G_IO 		21
 const char *address;
 extern const char *Device_ID;
+extern char Ota_start_flag;
 const char *webaddress[3]={"http://47.101.166.0:20005/originalMonitor.action","http://47.101.166.0:20005/monitor.action",0};
 TaskHandle_t led_test_task_Handler,http_test_task_Handler,low_power_Handler,adc1_get_data_task_Handler;
 static RTC_DATA_ATTR struct timeval sleep_enter_time;
 static SemaphoreHandle_t adc_semaphore,original_semaphore,led_semaphore;
-uint32_t num1=0,num2=0,num3=0;
-uint8_t time1=0;
 char post_data2[1024]={0},Movebody_flag=0,Outbed_flag=0,Nothuman_flag=0;
 /******************低功耗相*******************/
 static void low_vol_protect_task(void *arg);
@@ -179,14 +182,19 @@ static void http_test_task(void *pvParameters)
     {
      int err = xSemaphoreTake(adc_semaphore, portMAX_DELAY);
         if(err== pdTRUE){
+         
         if(http_data_type_flag==1)
-        {
-        address = webaddress[0];
+        {  printf("原始数据上传一次.............\n");
+           address = webaddress[0];
            Get_Current_Original_Data(post_data2);//得到json数据，用如post data
+             vTaskDelay(1 / portTICK_PERIOD_MS);///freertos里面的延时函数
         }else{
+           printf("身体呼吸数据上传一次..................\n");
            address = webaddress[1];
            Get_Current_Body_Data(post_data2);//得到json数据，用如post data
+             vTaskDelay(1 / portTICK_PERIOD_MS);///freertos里面的延时函数
         }
+         vTaskDelay(1 / portTICK_PERIOD_MS);///freertos里面的延时函数  
         http_rest_with_url();
     }}
     }
@@ -484,11 +492,11 @@ static void obtain_time(void)
     time(&now);//获取网络时间，64bit的秒计数
     localtime_r(&now, &timeinfo);//转化为具体的时间参数
 }
-
 static void adc1_get_data_task(void *pvParameters)
 {    
     int output_data=0;
     uint32_t num1=0,num2=0,num3=0;
+    uint8_t time1=0;
     int read_raw1, read_raw2, read_raw3;
     int read_raw11, read_raw22, read_raw33,read_raw111;
     uint64_t data_index = 0;
@@ -504,20 +512,6 @@ static void adc1_get_data_task(void *pvParameters)
     int N_heart = 1000;
      int N_heart_1 = 750;
     //重迭点数
-    int N_overlay = 30;
-    //最开始的2分钟 12*10 = 2 分钟
-    int adative_range = 12;
-    //正常的信号能量
-    double adaptive_energy_thresh = -1;
-    //正常的呼吸频率
-    double adaptive_resp_normal = -1;
-    //正常的心率
-    double adaptive_heart_normal = -1;
-    //正常的压阻变化绝对值
-    double adaptive_prdiff_normal = -1;
-    //正常的信号绝对值最大值
-    double adaptive_absmax_normal = -1;
-
     double seg_energy = 0.;
     double seg_pre_abssum = 0.;
     double resp_value = 0.;
@@ -526,7 +520,7 @@ static void adc1_get_data_task(void *pvParameters)
     double absmax = 0.;
     int people_counter = 9; //重物判断参数
     int not_people_counter = 0;//重物判断参数
-    int adative_range_index = 0;
+   
 
     //每次取100个数据点进行检测
     double * X_X = (double *)malloc(N_seg*sizeof(double));
@@ -552,12 +546,30 @@ static void adc1_get_data_task(void *pvParameters)
     memset(X_X_heart_2, 0x00, (N_heart - N_heart_1)*sizeof(double));
     // 0 正常 1 低通气 2 睡眠暂停 3 呼吸过快 4 坠床 5 体动
     double event_type_vec;
-    int out_num = 0;
-    double	max_value_index[2] = {0.,0.};
+    int log_level = 0;
+       //===========一些大循环里用的变量=============== [
+		//实际上应该用一个循环队列，因为只有数组大小为2，所以简化了
+		uint8_t hist_stat_arr_size = 2;
+		history_statistics hist_stat_arr[hist_stat_arr_size];
+		int hist_stat_arr_rear = 0;
+		history_statistics cur_stat;
+
+		memset(hist_stat_arr,0x00,sizeof(hist_stat_arr));
+		memset(&cur_stat,0x00,sizeof(cur_stat));
+		uint64_t datanum_after_inbed = 0;
+		uint8_t enable_further_judege = 1;
+		int i_resp_exception_counter = 0;
+		int i_heart_exception_counter = 0;
+		double	max_value_index[2] = {0.,0.};
+		enum mon_period { IDLE = 0, IN_BED, AFTER_ADAPT };
+		uint8_t current_period = IDLE;
+		int out_num = 0;
        gpio_set_level(LED_G_IO, 0);
+
         while(1) {  
+      //  printf("开始取数据\n");
         event_type_vec = 0;
-        vTaskDelay(10 / portTICK_PERIOD_MS);
+        vTaskDelay(10/ portTICK_PERIOD_MS);
         time1++;
         read_raw1 = adc1_get_raw( ADC1_CHANNEL_6);//压电
         read_raw2 = adc1_get_raw( ADC1_CHANNEL_7);//压阻
@@ -580,8 +592,17 @@ static void adc1_get_data_task(void *pvParameters)
            HTTP_Send_Data[http_send_flag*2]=read_raw111;
            HTTP_Send_Data[http_send_flag*2+1]=read_raw2;
             http_send_flag++;
-            if(http_send_flag==10)
-            {        time_t now;
+            if(http_send_flag==10)//采集了100组数据
+            {    
+                
+                  if(Ota_start_flag==1)//每秒检验一次是否有升级命令
+            {        
+                Ota_start_flag=0;
+                vTaskSuspend(http_test_task_Handler );
+            }
+                
+                   //printf("采集了一秒的数据\n");
+                     time_t now;
                      struct tm timeinfo;
                      time(&now);
                      localtime_r(&now, &timeinfo);
@@ -596,70 +617,94 @@ static void adc1_get_data_task(void *pvParameters)
                     strftime(strftime_buf, sizeof(strftime_buf), "%Y-%m-%d  %H:%M:%S", &timeinfo);
                     cname=strftime_buf;
                     http_data_type_flag=1;
-                    xSemaphoreGive(adc_semaphore);//满足条件时，上传原始数据,释放二值信号量
-                     http_send_flag=0;//标志位清零
-                       if(read_raw2<2000) low_power_flag++; else low_power_flag=0; //低功耗相关
-                       if(low_power_flag>=SAVE_POWER_WAIT_TIME)//如果满足条件，就进入低功耗
-                       {low_power_flag=0;
-                       xTaskCreate(&low_vol_protect_task, "low_vol_protect_task", 2048, NULL, 6,&low_power_Handler);  
+                   xSemaphoreGive(adc_semaphore);//满足条件时，上传原始数据,释放二值信号量，发送原始数据
+                    http_send_flag=0;//标志位清零
+                    if(read_raw2<2000) low_power_flag++; else low_power_flag=0; //低功耗相关
+                    if(low_power_flag>=SAVE_POWER_WAIT_TIME)//如果满足条件，就进入低功耗
+                       {low_power_flag=0;//标志位清零
+                       xTaskCreate(&low_vol_protect_task, "low_vol_protect_task", 2048, NULL, 6,&low_power_Handler);  //创建低功耗任务
                        }}
+                               if(data_index == 0) {
+	              if(read_raw2 < 1000) {
+								output_data = 0;
+	            }
+	            if(output_data < 10)	{
+	            		begin3 = 0;
+	            		continue;
+
+	            }
+          	}
                        data_index++;
-                       }
-            X_X_heart[begin3++] = read_raw11 - read_raw33;
+             }
+            X_X_heart[begin3++] = read_raw11 - read_raw33;//每次都先取一些数据放在这个数组里面
              if(time1 % sample_points != 0)
-             continue;
-             time1 = 0;
-           //printf("%llu      %d      %d      %d  \n", data_index, read_raw1,read_raw2, read_raw3 );
-            X_X_2[begin2] = read_raw1 - read_raw3; //压电
+             continue;//取原始数据，取100次，跳出本次循环100次
+             time1 = 0;//取完成以后，标志位清零
+            //printf("%llu      %d      %d      %d  \n", data_index, read_raw1,read_raw2, read_raw3 );
+            //基准数组
+         current_period = IN_BED;
+        if(data_index <= N_seg){
+            X_X[begin1] = read_raw1 - read_raw3;
+            Pr_X[begin1] = read_raw2;
+            begin1++;
+            //printf("\n%d\n%d\n",begin1,begin3);
+            if(begin1==N_seg){
+                begin1 = 0;
+                begin3 = 0;
+            }
+        }
+		//将上一个75点的呼吸率数据备份
+        Data_transfer(X_X_1, X_X ,N_seg - N_seg_1, N_seg);
+        Data_transfer(Pr_X_1, Pr_X ,N_seg - N_seg_1, N_seg);
+        //将上一个750点的呼吸率心率数据备份
+        Data_transfer(X_X_heart_1, X_X_heart , N_heart - N_heart_1, N_heart);
+        //printf("Sleep after two minutes:\n");
+            if(data_index > N_seg){
+            current_period = AFTER_ADAPT; 
+            X_X_2[begin2] = read_raw1 - read_raw3; //压电取一百个原始数据，当大于100个数据时，开始进行计算
             Pr_X_2[begin2] = read_raw2; //压阻
             begin2++;
-            if(begin2==N_seg - N_seg_1){
+            if(begin2==N_seg - N_seg_1){//如果取了 2.5的数据
              clock_t start, finish;//计算算法的时间
             double  duration;
             start = clock();
-             begin2 = 0;
+            begin2 = 0;
             begin3 = 0;
-             Data_transfer(X_X_heart_2, X_X_heart, 0,N_heart - N_heart_1);
-			//拼凑前7.5秒和当前2.5秒的数据
-			Data_transfer(X_X,X_X_1,0,N_seg_1);
-			Data_transfer(Pr_X,Pr_X_1,0,N_seg_1);
-			Data_transfer(X_X_heart,X_X_heart_1,0,N_heart_1);
-			Data_transfer(X_X+N_seg_1,X_X_2,0,N_seg - N_seg_1);
-			Data_transfer(Pr_X+N_seg_1,Pr_X_2,0,N_seg - N_seg_1);
-			Data_transfer(X_X_heart+N_heart_1,X_X_heart_2,0,N_heart - N_heart_1);
-            //将上一个75点的呼吸率数据备份
-            Data_transfer(X_X_1, X_X ,N_seg - N_seg_1, N_seg);
-            Data_transfer(Pr_X_1, Pr_X ,N_seg - N_seg_1, N_seg);
-            //将上一个750点的呼吸率心率数据备份
-            Data_transfer(X_X_heart_1, X_X_heart , N_heart - N_heart_1, N_heart);
-            double * out_sign = (double *)malloc(143*sizeof(double));
-             int * out_levels = (int *)malloc(5*sizeof(int));
-             double * a2_resp = (double *)malloc(N_seg*sizeof(double));
-             //double * a2_heart = (double *)malloc(N_seg*sizeof(double));
-             wavedec(X_X, out_sign, out_levels, N_seg, 5);
-             wrcoef(out_sign,out_levels,a2_resp);
-            free(out_sign);out_sign = NULL;
-            free(out_levels);out_levels = NULL;
-            //计算压阻绝对值之和
-            seg_pre_abssum = onearray_sum_fabs(Pr_X,N_seg);
-            //计算能量值
-            seg_energy = accumulate1(a2_resp,N_seg,N_seg);
-            //离床判断
+                Data_transfer(X_X_heart_2, X_X_heart, 0,N_heart - N_heart_1);
+
+				//拼凑前7.5秒和当前2.5秒的数据
+				Data_transfer(X_X,X_X_1,0,N_seg_1);
+				Data_transfer(Pr_X,Pr_X_1,0,N_seg_1);
+				Data_transfer(X_X_heart,X_X_heart_1,0,N_heart_1);
+				Data_transfer(X_X+N_seg_1,X_X_2,0,N_seg - N_seg_1);
+				Data_transfer(Pr_X+N_seg_1,Pr_X_2,0,N_seg - N_seg_1);
+				Data_transfer(X_X_heart+N_heart_1,X_X_heart_2,0,N_heart - N_heart_1);
+                double * out_sign = (double *)malloc(143*sizeof(double));
+                int * out_levels = (int *)malloc(5*sizeof(int));
+                double * a2_resp = (double *)malloc(N_seg*sizeof(double));
+                //double * a2_heart = (double *)malloc(N_seg*sizeof(double));
+                wavedec(X_X, out_sign, out_levels, N_seg, 5);
+                wrcoef(out_sign,out_levels,a2_resp);
+                free(out_sign);out_sign = NULL;
+                free(out_levels);out_levels = NULL;
+                //计算压阻绝对值之和
+                seg_pre_abssum = onearray_sum_fabs(Pr_X,N_seg);
+                //计算能量值
+                seg_energy = accumulate1(a2_resp,N_seg,N_seg);
             if(seg_pre_abssum < 200)
-             {
+             {      vTaskDelay(200 / portTICK_PERIOD_MS);
                 	printf("has left bed\n");
-                     
                 	//做一些reset工作
                 	//清理之前分配的内存
                 	free(a2_resp);a2_resp = NULL;
 									//free(a2_heart);a2_heart = NULL;
 					finish = clock();
-                	duration = (double)(finish - start) / CLOCKS_PER_SEC;
-                HTTP_Body_Data[1]=0;
-                HTTP_Body_Data[2]=0;
-                HTTP_Body_Data[0]=7;
-                 http_data_type_flag=2;
-                 xSemaphoreGive(adc_semaphore);
+                    duration = (double)(finish - start) / CLOCKS_PER_SEC;
+                    HTTP_Body_Data[1]=0;
+                    HTTP_Body_Data[2]=0;
+                    HTTP_Body_Data[0]=7;
+                    http_data_type_flag=2;
+                    xSemaphoreGive(adc_semaphore);
                 	continue;
                 }
 
@@ -667,13 +712,14 @@ static void adc1_get_data_task(void *pvParameters)
                     resp_value = 0.;
                     heart_value = 0.;
                     not_people_counter = not_people_counter + 1;
-									if(not_people_counter>=4) people_counter = 0;
+					if(not_people_counter>=4) people_counter = 0;
                 }
                 else{
                     not_people_counter = 0;
                     people_counter =  people_counter +1;
                 }
                 if(not_people_counter >= 4 || people_counter <= 8) {
+                    vTaskDelay(500 / portTICK_PERIOD_MS);
                      printf("it is not human\n");
                     //清理之前分配的内存
                     free(a2_resp);a2_resp = NULL;
@@ -684,41 +730,86 @@ static void adc1_get_data_task(void *pvParameters)
                         HTTP_Body_Data[1]=0;
                         HTTP_Body_Data[2]=0;
                         HTTP_Body_Data[0]=7;
-                 http_data_type_flag=2;
-                 xSemaphoreGive(adc_semaphore);
-                    continue;
+                        http_data_type_flag=2;
+                       xSemaphoreGive(adc_semaphore);
+                        continue;
                 }
+                	//计算压阻一阶导数绝对值的和
+				  double * out_diff = (double *)malloc(N_seg*sizeof(double));
+				  diff_fabs(Pr_X,N_seg,out_diff,&out_num);
+				  pr_diff = onearray_sum(out_diff,out_num);
+				  free(out_diff);out_diff = NULL;
+				  if(pr_diff >= 1000){
+                    vTaskDelay(200 / portTICK_PERIOD_MS);
+					printf("there is body movement\n");
+                    	//做一些reset工作
+                    datanum_after_inbed = 0;
+					//清理之前分配的内存
+					free(a2_resp);a2_resp = NULL;
+					//free(a2_heart);a2_heart = NULL;
+					finish = clock();
+					duration = (double)(finish - start) / CLOCKS_PER_SEC;
+					//printf( "\n算法时间：%f seconds\n", duration );
+                     HTTP_Body_Data[1]=0;
+                     HTTP_Body_Data[2]=0;
+                     HTTP_Body_Data[0]=8;
+                    http_data_type_flag=2;
+                    xSemaphoreGive(adc_semaphore);
+					continue;
+				}
+                
                 //计算呼吸频率
                 resp_value = obtain_resprate_with_max_possibility(a2_resp,N_seg);
                 //计算心率
                 heart_value = obtain_heart_by_spec(X_X_heart,N_heart);
-                //计算压阻一阶导数绝对值的和
-                double * out_diff = (double *)malloc(N_seg*sizeof(double));
-    			diff_fabs(Pr_X,N_seg,out_diff,&out_num);
-    			pr_diff = onearray_sum(out_diff,out_num);
-    			free(out_diff);out_diff = NULL;
 
                 //计算压电信号最大值
-    			max_v_interval_fabs(X_X,max_value_index,N_seg);
-    			absmax = max_value_index[0];
+                max_v_interval_fabs(X_X,max_value_index,N_seg);
+                absmax = max_value_index[0];
 
+                cur_stat.absmax = absmax;
+                cur_stat.seg_energy = seg_energy;
+                cur_stat.pr_diff = pr_diff;
+                cur_stat.resp_value = resp_value;
+                cur_stat.heart_value = heart_value;
+                if(datanum_after_inbed == 0) {
+                    save_history_info(hist_stat_arr, hist_stat_arr_size,&hist_stat_arr_rear, cur_stat); //do nothing
+                }
+                else if (enable_further_judege == 1)	//根据过往信息进一步判断
+                {
+                	uint8_t hist_stat_arr_front = 0;
+                	if (datanum_after_inbed >= hist_stat_arr_size) //历史数组中已经有两个数据了
+                		hist_stat_arr_front = 1;
+
+                	//结合上两个10秒，进一步判断结果
+                	make_further_polishment(absmax,
+                                                 &resp_value, &heart_value,
+                                                 &i_resp_exception_counter, &i_heart_exception_counter,
+                                                 hist_stat_arr,hist_stat_arr_size, hist_stat_arr_front);
+
+                  cur_stat.resp_value = resp_value;
+                  cur_stat.heart_value = heart_value;
+                  save_history_info(hist_stat_arr, hist_stat_arr_size,&hist_stat_arr_rear, cur_stat);
+                }
+                else
+                	; //To do
+                datanum_after_inbed++;
                 //清理加输出
                 free(a2_resp);a2_resp = NULL;
+
                 printf("resp_value = %f,heart_value = %f\n",resp_value,heart_value);
-                HTTP_Body_Data[0]=6;
-                 if(pr_diff >= 1000){
-                printf("there is body movement\n");
-                HTTP_Body_Data[0]=8;
-                }
-                HTTP_Body_Data[1]=(int)resp_value;
-                HTTP_Body_Data[2]=(int)heart_value;
-    
-                 http_data_type_flag=2;
-                 xSemaphoreGive(adc_semaphore);
+                  HTTP_Body_Data[1]=(int)resp_value;
+                  HTTP_Body_Data[2]=(int)heart_value;
+                  HTTP_Body_Data[0]=6;
+                  http_data_type_flag=2;
+                xSemaphoreGive(adc_semaphore);
                 finish = clock();
                 duration = (double)(finish - start) / CLOCKS_PER_SEC;
-                printf( "\n suanfatime:%f seconds\n", duration );
+                printf( "\n accumulate time:%f seconds\n", duration );
+                
+          
             }        
+        }
     }
     free(X_X); X_X = NULL;
     free(Pr_X); Pr_X = NULL;
@@ -898,5 +989,80 @@ static void adc_init(void)
                xTaskCreate(&http_test_task, "http_test_task", 8192, NULL, 7, &http_test_task_Handler);
                vTaskDelete(NULL);     
         }
+          vTaskDelay(1 / portTICK_PERIOD_MS);///freertos里面的延时函数
     }
+}
+
+void make_further_polishment(double absmax,
+                             double *p_resp_value, double *p_heart_value,
+                                int *p_resp_exception_counter, int *p_heart_exception_counter,
+                                history_statistics hist_stat_arr[], uint8_t arr_size, uint8_t front_pos) {
+	double history_resp_sum = 0.;
+	double history_heart_sum = 0.;
+	uint8_t field = -1;
+		 //======================呼吸率================================ [
+		 //std函数比较费时间，暂时不用
+		 //uint8_t condition_outliers = (absmax_vec(i) > 2*adaptive_absmax_normal || absmax_vec(i) - mean(X_seg) > 3*std(X_seg));
+	 //uint8_t condition_outliers = (absmax > 2*adaptive_absmax_normal );
+     uint8_t whether_resp_abnormal = (*p_resp_value > 35 || *p_resp_value < 10);
+     if(whether_resp_abnormal == 1) {//异常的呼吸率
+//            if(condition_outliers == 1) { //且存在异常点,放弃本次呼吸率，用过往历史
+//            		field = 3;
+//            		history_resp_sum = get_history_info_sum_of_some_field(hist_stat_arr, arr_size, 0, front_pos + 1, field);
+//                *p_resp_value = history_resp_sum/(front_pos - 0 + 1);
+//            }
+//            else { //没有异常点
+                //To do，目前也是放弃本次测量。用一个计数器累积，如果连续3次这种情况，就报告出去
+                *p_resp_exception_counter = *p_resp_exception_counter + 1;
+                if(*p_resp_exception_counter < 3) {
+                		field = 3;
+                   	history_resp_sum = get_history_info_sum_of_some_field(hist_stat_arr, arr_size, 0, front_pos + 1, field);
+                		*p_resp_value = history_resp_sum/(front_pos - 0 + 1);
+                }
+                else
+                {
+                    ;//todo = 0;%不改变当前计算值,报告出去
+                }
+            //}
+      }
+     if(whether_resp_abnormal == 0) { //正常的呼吸率,用当前和过往的做平均
+     				field = 3;
+            history_resp_sum = get_history_info_sum_of_some_field(hist_stat_arr, arr_size, 0, front_pos + 1, field);
+            *p_resp_value = (history_resp_sum + *p_resp_value)/((front_pos - 0 + 1) + 1);
+            *p_resp_exception_counter = 0;
+     }
+     // ========================================================= ]
+
+     //======================心率================================ [
+     uint8_t whether_heart_abnormal = (*p_heart_value > 150 || *p_heart_value < 50);
+     if(whether_heart_abnormal == 1 ) //异常的心率
+     {
+//     		if(condition_outliers == 1) //且存在异常点, 放弃本次心率，用过往历史
+//     		{
+//     			field = 4;
+//          history_heart_sum = get_history_info_sum_of_some_field(hist_stat_arr, arr_size, 0, front_pos + 1, field);
+//          *p_heart_value = history_heart_sum/(front_pos - 0 + 1);
+//     		}
+//     		else  //没有异常点
+//     		{
+     			*p_heart_exception_counter = *p_heart_exception_counter + 1;
+          if(*p_heart_exception_counter < 3) {
+          		field = 4;
+             	history_heart_sum = get_history_info_sum_of_some_field(hist_stat_arr, arr_size, 0, front_pos + 1, field);
+          		*p_heart_value = history_heart_sum/(front_pos - 0 + 1);
+          }
+          else
+          {
+              ;//todo = 0;%不改变当前计算值,报告出去
+          }
+//     		}
+     }
+     if(whether_heart_abnormal == 0) //正常的心率,用当前和过往的做平均
+     {
+         field = 4;
+         history_heart_sum = get_history_info_sum_of_some_field(hist_stat_arr, arr_size, 0, front_pos + 1, field);
+         *p_heart_value = (history_heart_sum + *p_heart_value)/((front_pos - 0 + 1) + 1);
+         *p_heart_exception_counter = 0;
+     }
+     // ========================================================= ]
 }

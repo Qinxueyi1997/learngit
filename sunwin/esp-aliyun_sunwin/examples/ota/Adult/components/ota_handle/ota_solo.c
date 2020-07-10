@@ -13,15 +13,17 @@
 #include "mqtt_api.h"
 #include "ota_api.h"
 #include "dm_wrapper.h"
+#include "driver/adc.h"
 
 void HAL_Reboot();
 const char *Device_ID;
 char g_product_key[IOTX_PRODUCT_KEY_LEN + 1] = {0};
 char g_device_name[IOTX_DEVICE_NAME_LEN + 1] = {0};
 char g_device_secret[IOTX_DEVICE_SECRET_LEN + 1] = {0};
-
+char Ota_start_flag=0;
+int led=0;
 #define OTA_MQTT_MSGLEN         (2048)
-
+#define LED_G_IO 		21
 #define EXAMPLE_TRACE(fmt, ...)  \
     do { \
         HAL_Printf("%s|%03d :: ", __func__, __LINE__); \
@@ -129,6 +131,7 @@ static int _ota_mqtt_client(void)
       Device_ID=g_device_name;
     /* Device AUTH */
     if (0 != IOT_SetupConnInfo(g_product_key, g_device_name, g_device_secret, (void **)&pconn_info)) {
+        //MQTT连接前的准备, 基于DeviceName + DeviceSecret + ProductKey产生MQTT连接的用户名和密码等
         EXAMPLE_TRACE("AUTH request failed!");
         rc = -1;
         goto do_exit;
@@ -156,12 +159,14 @@ static int _ota_mqtt_client(void)
 
     /* Construct a MQTT client with specify parameter */
     pclient = IOT_MQTT_Construct(&mqtt_params);
+    //MQTT实例的构造函数, 入参为iotx_mqtt_param_t结构体, 连接MQTT服务器, 并返回被创建句柄
     if (NULL == pclient) {
         EXAMPLE_TRACE("MQTT construct failed");
         rc = -1;
         goto do_exit;
     }
     h_ota = IOT_OTA_Init(g_product_key, g_device_name, pclient);
+    //OTA实例的构造函数, 创建一个OTA会话的句柄并返回
     if (NULL == h_ota) {
         rc = -1;
         EXAMPLE_TRACE("initialize OTA failed");
@@ -185,15 +190,22 @@ static int _ota_mqtt_client(void)
 
         /* handle the MQTT packet received from TCP or SSL connection */
         IOT_MQTT_Yield(pclient, 200);
+        // MQTT会话阶段, MQTT主循环函数, 内含了心跳的维持, 服务器下行报文的收取等
 
         if (IOT_OTA_IsFetching(h_ota)) {
+            //OTA下载阶段, 判断固件下载是否仍在进行中, 尚未完成全部固件内容的下载
             uint32_t last_percent = 0, percent = 0;
             char md5sum[33];
             char version[128] = {0};
             uint32_t len, size_downloaded, size_file;
             do {
+                 printf( "\n 升级ing......................\n");
 
+                 led=~led;
+                  gpio_set_level(LED_G_IO, led);
+                 Ota_start_flag=1;
                 len = IOT_OTA_FetchYield(h_ota, buf_ota, OTA_BUF_LEN, 1);
+                //OTA下载阶段, 在指定的timeout时间内, 从固件服务器下载一段固件内容, 保存在入参buffer中
                 if (len > 0) {
                     if (HAL_Firmware_Persistence_Write(buf_ota, len) <= 0) {
                         EXAMPLE_TRACE("write data to file failed");
@@ -202,6 +214,7 @@ static int _ota_mqtt_client(void)
                     }
                 } else {
                     IOT_OTA_ReportProgress(h_ota, IOT_OTAP_FETCH_FAILED, NULL);
+                    //可选API, OTA下载阶段, 调用此函数向服务端汇报已经下载了全部固件内容的百分之多少
                     EXAMPLE_TRACE("ota fetch fail");
                 }
 
@@ -210,6 +223,7 @@ static int _ota_mqtt_client(void)
                 IOT_OTA_Ioctl(h_ota, IOT_OTAG_FILE_SIZE, &size_file, 4);
                 IOT_OTA_Ioctl(h_ota, IOT_OTAG_MD5SUM, md5sum, 33);
                 IOT_OTA_Ioctl(h_ota, IOT_OTAG_VERSION, version, 128);
+                //OTA实例的输入输出函数, 根据不同的命令字可以设置OTA会话的属性, 或者获取OTA会话的状态
 
                 last_percent = percent;
                 percent = (size_downloaded * 100) / size_file;
@@ -223,8 +237,24 @@ static int _ota_mqtt_client(void)
             IOT_OTA_Ioctl(h_ota, IOT_OTAG_CHECK_FIRMWARE, &firmware_valid, 4);
             if (0 == firmware_valid) {
                 EXAMPLE_TRACE("The firmware is invalid");
+                 gpio_set_level(LED_G_IO, 1);
             } else {
                 EXAMPLE_TRACE("The firmware is valid");
+                 gpio_set_level(LED_G_IO, 1);
+                 HAL_SleepMs(100);    
+                 gpio_set_level(LED_G_IO, 0);  
+                 HAL_SleepMs(100);    
+                 gpio_set_level(LED_G_IO, 1);
+                HAL_SleepMs(100);     
+                gpio_set_level(LED_G_IO, 0);  
+                 HAL_SleepMs(100);    
+                 gpio_set_level(LED_G_IO, 1);
+                 HAL_SleepMs(100);    
+                gpio_set_level(LED_G_IO, 0);  
+                 HAL_SleepMs(100);    
+                 gpio_set_level(LED_G_IO, 1);
+                 HAL_SleepMs(100);               
+                 gpio_set_level(LED_G_IO, 0);  
             }
 
             ota_over = 1;
