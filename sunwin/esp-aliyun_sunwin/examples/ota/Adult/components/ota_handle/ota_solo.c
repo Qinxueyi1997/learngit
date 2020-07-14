@@ -186,7 +186,7 @@ static int _ota_mqtt_client(void)
     do {
         uint32_t firmware_valid;
 
-        EXAMPLE_TRACE("wait ota upgrade command....");
+    //    EXAMPLE_TRACE("wait ota upgrade command....");
 
         /* handle the MQTT packet received from TCP or SSL connection */
         IOT_MQTT_Yield(pclient, 200);

@@ -60,10 +60,15 @@ void make_further_polishment( double absmax,
                                          double *p_resp_value, double *p_heart_value,
                                             int *p_resp_exception_counter, int *p_heart_exception_counter,
                                             history_statistics hist_stat_arr[], uint8_t arr_size, uint8_t front_pos);
-/*******低功耗相关头文件********/
-#define   SAVE_POWER_WAIT_TIME    300//5分钟
 
+#define  SAVE_POWER_WAIT_TIME    300//5分钟
+#define EXAMPLE_ESP_MAXIMUM_RETRY  5
 #define LED_G_IO 		21
+#define false		0
+#define true		1
+#define MAX_HTTP_RECV_BUFFER 512
+#define WIFI_CONNECTED_BIT BIT0
+#define WIFI_FAIL_BIT      BIT1
 const char *address;
 extern const char *Device_ID;
 extern char Ota_start_flag;
@@ -71,43 +76,39 @@ const char *webaddress[3]={"http://47.101.166.0:20005/originalMonitor.action","h
 TaskHandle_t led_test_task_Handler,http_test_task_Handler,low_power_Handler,adc1_get_data_task_Handler;
 static RTC_DATA_ATTR struct timeval sleep_enter_time;
 static SemaphoreHandle_t adc_semaphore,original_semaphore,led_semaphore;
-char post_data2[1024]={0},Movebody_flag=0,Outbed_flag=0,Nothuman_flag=0;
-/******************低功耗相*******************/
-static void low_vol_protect_task(void *arg);
-/*****************网络状态指示灯**************/
-static void wifi_led_test_task(void *pvParameters);//wifi断开
-static void led_test_task(void *pvParameters);
+char post_data2[1024]={0},Movebody_flag=0,Outbed_flag=0,Nothuman_flag=0,wifi_flag=0,http_send_fail=0;
 short http_send_heart_flag=0,http_send_flag=0,low_power_flag=0;
-char wifi_flag=0;
-char http_send_fail=0;
 short person_flag=0,http_send_time=0,circle_time=0,sntp_init_flag=0,http_data_type_flag=0;
+//wifi函数
+static EventGroupHandle_t  wifi_event_group;
+static EventGroupHandle_t s_wifi_event_group;
+static const char *TAG2 = "wifi station";
+static int s_retry_num = 0;
+static const int CONNECTED_BIT = BIT0;
+static const int ESPTOUCH_DONE_BIT = BIT1;
+static const char *TAG1 = "smartconfig_example";
 //http_data_type_flag=1  表示原始数据
 //http_data_type_flag=2  表示呼吸心率信息
-
-#define EXAMPLE_ESP_MAXIMUM_RETRY  5
-/*************sntp相关定义********************/
+static void low_vol_protect_task(void *arg);
+static void wifi_led_test_task(void *pvParameters);//wifi断开网络状态指示灯
+static void led_test_task(void *pvParameters);
+static void adc1_get_data_task(void *pvParameters);
+void smartconfig_example_task(void *parm);
 static const char *TAGTIME = "TIME";
 static void obtain_time(void);
+static void adc_init(void);
+void Get_Current_Body_Data(char *dat);
+void Get_Current_Original_Data(char *dat);
 char *cname;
-/********************************************/
-/*
-===========================
-宏定义
-=========================== 
-*/
-#define false		0
-#define true		1
-#define MAX_HTTP_RECV_BUFFER 512
 static const char *TAG = "HTTP_CLIENT";
-    nvs_handle handle;
+ nvs_handle handle;
 static const char *NVS_CUSTOMER = "customer data";
 static const char *DATA1= "param 1";
 int  HTTP_Send_Data[20]={0},original_data[12000]={0};
 int HTTP_Body_Data[5]={7,20,0,0,0};
 extern const char howsmyssl_com_root_cert_pem_start[] asm("_binary_howsmyssl_com_root_cert_pem_start");
 extern const char howsmyssl_com_root_cert_pem_end[]   asm("_binary_howsmyssl_com_root_cert_pem_end");
-void Get_Current_Body_Data(char *dat);
-void Get_Current_Original_Data(char *dat);
+
 esp_err_t _http_event_handler(esp_http_client_event_t *evt)
 {
     switch(evt->event_id) {
@@ -125,14 +126,14 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt)
             break;
         case HTTP_EVENT_ON_DATA:
            ESP_LOGD(TAG, "HTTP_EVENT_ON_DATA, len=%d", evt->data_len);
-           //  ESP_LOGI(TAG, "Receivedata=  %s            \n", (char*)evt->data);
+             //ESP_LOGI(TAG, "Receivedata=  %s            \n", (char*)evt->data);
              printf("%.*s   \n", evt->data_len, (char*)evt->data);
             break;
         case HTTP_EVENT_ON_FINISH:
-           ESP_LOGD(TAG, "HTTP_EVENT_ON_FINISH");
+             ESP_LOGD(TAG, "HTTP_EVENT_ON_FINISH");
             break;
         case HTTP_EVENT_DISCONNECTED:
-           ESP_LOGI(TAG, "HTTP_EVENT_DISCONNECTED");
+             ESP_LOGI(TAG, "HTTP_EVENT_DISCONNECTED");
             int mbedtls_err = 0;
             esp_err_t err = esp_tls_get_and_clear_last_error(evt->data, &mbedtls_err, NULL);
            if (err != 0) {
@@ -160,7 +161,7 @@ static void http_rest_with_url(void)
      esp_http_client_set_post_field(client, post_data1, strlen(post_data1));//设置发送格式，获取json数据
      esp_err_t  err = esp_http_client_perform(client);//完成tcp的发送和接收
          if (err == ESP_OK) { 
-         ESP_LOGI(TAG, "HTTP POST Status = %d, content_length = %d",
+        ESP_LOGI(TAG, "HTTP POST Status = %d, content_length = %d",
                 esp_http_client_get_status_code(client),
                 esp_http_client_get_content_length(client));
                 http_send_fail=0;
@@ -184,12 +185,12 @@ static void http_test_task(void *pvParameters)
         if(err== pdTRUE){
          
         if(http_data_type_flag==1)
-        {  printf("原始数据上传一次.............\n");
+        {  //printf("原始数据上传一次.............\n");
            address = webaddress[0];
            Get_Current_Original_Data(post_data2);//得到json数据，用如post data
              vTaskDelay(1 / portTICK_PERIOD_MS);///freertos里面的延时函数
         }else{
-           printf("身体呼吸数据上传一次..................\n");
+         //  printf("身体呼吸数据上传一次..................\n");
            address = webaddress[1];
            Get_Current_Body_Data(post_data2);//得到json数据，用如post data
              vTaskDelay(1 / portTICK_PERIOD_MS);///freertos里面的延时函数
@@ -200,19 +201,7 @@ static void http_test_task(void *pvParameters)
     }
     vTaskDelete(NULL);
 }
-static void adc_init(void);
-static void adc1_get_data_task(void *pvParameters);
-//wifi函数
-static EventGroupHandle_t  wifi_event_group;
-static EventGroupHandle_t s_wifi_event_group;
-#define WIFI_CONNECTED_BIT BIT0
-#define WIFI_FAIL_BIT      BIT1
-static const char *TAG2 = "wifi station";
-static int s_retry_num = 0;
-static const int CONNECTED_BIT = BIT0;
-static const int ESPTOUCH_DONE_BIT = BIT1;
-static const char *TAG1 = "smartconfig_example";
-void smartconfig_example_task(void *parm);
+
 static void event_handler(void* arg, esp_event_base_t event_base, 
                                 int32_t event_id, void* event_data)
 {  nvs_handle handle;
@@ -429,10 +418,10 @@ void app_main(void)
       initialise_wifi();//wifi链接
       IOT_SetLogLevel(IOT_LOG_INFO);//aliyun模型初始化
       //conn_mgr_start();
-      ESP_LOGI(TAG, "主函数的任务..........................................................");
+    //  ESP_LOGI(TAG, "主函数的任务..........................................................");
       xTaskCreate(&adc1_get_data_task, "adc1_get_data_task", 8192, NULL, 5, &adc1_get_data_task_Handler);
       xTaskCreate((void (*)(void *))ota_main, "ota_example", 20480, NULL, 15, NULL);
-      xTaskCreate(&http_test_task, "http_test_task", 8192, NULL, 7, &http_test_task_Handler);
+      xTaskCreate(&http_test_task, "http_test_task", 8192, NULL, 7, &http_test_task_Handler);//高优先级通过获取二值信号量
       
 }
 
@@ -569,7 +558,7 @@ static void adc1_get_data_task(void *pvParameters)
         while(1) {  
       //  printf("开始取数据\n");
         event_type_vec = 0;
-        vTaskDelay(10/ portTICK_PERIOD_MS);
+        vTaskDelay(18/ portTICK_PERIOD_MS);
         time1++;
         read_raw1 = adc1_get_raw( ADC1_CHANNEL_6);//压电
         read_raw2 = adc1_get_raw( ADC1_CHANNEL_7);//压阻
@@ -588,6 +577,7 @@ static void adc1_get_data_task(void *pvParameters)
             read_raw2=num2/sample_points;
             read_raw3=num3/sample_points;
             num1=0;num2=0;num3=0;
+
            read_raw111=read_raw1-read_raw3;
            HTTP_Send_Data[http_send_flag*2]=read_raw111;
            HTTP_Send_Data[http_send_flag*2+1]=read_raw2;
@@ -624,6 +614,7 @@ static void adc1_get_data_task(void *pvParameters)
                        {low_power_flag=0;//标志位清零
                        xTaskCreate(&low_vol_protect_task, "low_vol_protect_task", 2048, NULL, 6,&low_power_Handler);  //创建低功耗任务
                        }}
+
                                if(data_index == 0) {
 	              if(read_raw2 < 1000) {
 								output_data = 0;
@@ -636,6 +627,7 @@ static void adc1_get_data_task(void *pvParameters)
           	}
                        data_index++;
              }
+
             X_X_heart[begin3++] = read_raw11 - read_raw33;//每次都先取一些数据放在这个数组里面
              if(time1 % sample_points != 0)
              continue;//取原始数据，取100次，跳出本次循环100次
@@ -644,6 +636,7 @@ static void adc1_get_data_task(void *pvParameters)
             //基准数组
          current_period = IN_BED;
         if(data_index <= N_seg){
+
             X_X[begin1] = read_raw1 - read_raw3;
             Pr_X[begin1] = read_raw2;
             begin1++;
@@ -692,7 +685,7 @@ static void adc1_get_data_task(void *pvParameters)
                 //计算能量值
                 seg_energy = accumulate1(a2_resp,N_seg,N_seg);
             if(seg_pre_abssum < 200)
-             {      vTaskDelay(200 / portTICK_PERIOD_MS);
+             {     
                 	printf("has left bed\n");
                 	//做一些reset工作
                 	//清理之前分配的内存
@@ -740,7 +733,7 @@ static void adc1_get_data_task(void *pvParameters)
 				  pr_diff = onearray_sum(out_diff,out_num);
 				  free(out_diff);out_diff = NULL;
 				  if(pr_diff >= 1000){
-                    vTaskDelay(200 / portTICK_PERIOD_MS);
+                  
 					printf("there is body movement\n");
                     	//做一些reset工作
                     datanum_after_inbed = 0;
@@ -798,8 +791,10 @@ static void adc1_get_data_task(void *pvParameters)
                 free(a2_resp);a2_resp = NULL;
 
                 printf("resp_value = %f,heart_value = %f\n",resp_value,heart_value);
+                  
                   HTTP_Body_Data[1]=(int)resp_value;
                   HTTP_Body_Data[2]=(int)heart_value;
+           
                   HTTP_Body_Data[0]=6;
                   http_data_type_flag=2;
                 xSemaphoreGive(adc_semaphore);
