@@ -109,7 +109,41 @@ factory_restore.o: \
  /home/qinxueyi/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h \
  /home/qinxueyi/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip6_zone.h \
  /home/qinxueyi/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h \
- /home/qinxueyi/esp/esp-idf/components/esp_netif/include/esp_netif_sta_list.h
+ /home/qinxueyi/esp/esp-idf/components/esp_netif/include/esp_netif_sta_list.h \
+ /home/qinxueyi/esp/esp-idf/components/esp32/include/esp_sleep.h \
+ /home/qinxueyi/esp/esp-idf/components/driver/include/driver/gpio.h \
+ /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_types.h \
+ /home/qinxueyi/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
+ /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/gpio_struct.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/gpio_caps.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/include/hal/gpio_types.h \
+ /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h \
+ /home/qinxueyi/esp/esp-idf/components/driver/include/driver/touch_pad.h \
+ /home/qinxueyi/esp/esp-idf/components/driver/include/driver/touch_sensor_common.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/include/soc/touch_sensor_periph.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/touch_sensor_channel.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/touch_sensor_caps.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_struct.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/sens_reg.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/sens_struct.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_struct.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/include/hal/touch_sensor_types.h \
+ /home/qinxueyi/esp/esp-idf/components/driver/esp32/include/touch_sensor.h \
+ /home/qinxueyi/esp/esp-idf/components/driver/include/driver/uart.h \
+ /home/qinxueyi/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/include/hal/uart_types.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h \
+ /home/qinxueyi/esp/esp-idf/components/driver/include/driver/rtc_io.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/include/soc/rtc_io_periph.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_caps.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_channel.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_reg.h \
+ /home/qinxueyi/esp/esp-idf/components/soc/include/hal/rtc_io_types.h
 
 /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h:
 
@@ -330,3 +364,72 @@ factory_restore.o: \
 /home/qinxueyi/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_netif/include/esp_netif_sta_list.h:
+
+/home/qinxueyi/esp/esp-idf/components/esp32/include/esp_sleep.h:
+
+/home/qinxueyi/esp/esp-idf/components/driver/include/driver/gpio.h:
+
+/home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_types.h:
+
+/home/qinxueyi/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
+
+/home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/gpio_struct.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/gpio_caps.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/include/hal/gpio_types.h:
+
+/home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h:
+
+/home/qinxueyi/esp/esp-idf/components/driver/include/driver/touch_pad.h:
+
+/home/qinxueyi/esp/esp-idf/components/driver/include/driver/touch_sensor_common.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/include/soc/touch_sensor_periph.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/touch_sensor_channel.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/touch_sensor_caps.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_struct.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/sens_reg.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/sens_struct.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_struct.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/include/hal/touch_sensor_types.h:
+
+/home/qinxueyi/esp/esp-idf/components/driver/esp32/include/touch_sensor.h:
+
+/home/qinxueyi/esp/esp-idf/components/driver/include/driver/uart.h:
+
+/home/qinxueyi/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/include/hal/uart_types.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h:
+
+/home/qinxueyi/esp/esp-idf/components/driver/include/driver/rtc_io.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/include/soc/rtc_io_periph.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_caps.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_channel.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_reg.h:
+
+/home/qinxueyi/esp/esp-idf/components/soc/include/hal/rtc_io_types.h:
+/home/qinxueyi/esp/esp-aliyun/examples/solutions/smart_light/components/factory_restore/.//factory_restore.c:

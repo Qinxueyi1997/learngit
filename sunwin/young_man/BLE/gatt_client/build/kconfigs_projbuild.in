@@ -1,0 +1,5 @@
+source "/home/qinxueyi/esp/esp-idf/components/app_update/Kconfig.projbuild"
+source "/home/qinxueyi/esp/esp-idf/components/bootloader/Kconfig.projbuild"
+source "/home/qinxueyi/esp/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "/home/qinxueyi/esp/esp-idf/examples/sunwin/young_man/BLE3/gatt_client/main/Kconfig.projbuild"
+source "/home/qinxueyi/esp/esp-idf/components/partition_table/Kconfig.projbuild"

@@ -273,6 +273,7 @@ static void event_handler(void* arg, esp_event_base_t event_base,
         ESP_LOGI(TAG1, "Found channel");
     } else if (event_base == SC_EVENT && event_id == SC_EVENT_GOT_SSID_PSWD) { //获取到ssid和密码   第六步，获取 wifi信息
         ESP_LOGI(TAG1, "Got SSID and password");
+        vTaskSuspend(led_test_task_Handler);
         smartconfig_event_got_ssid_pswd_t *evt = (smartconfig_event_got_ssid_pswd_t *)event_data;
         wifi_config_t wifi_config;
         uint8_t ssid[33] = { 0 };
@@ -417,8 +418,7 @@ void app_main(void)
       adc_init();//adc初始化
       initialise_wifi();//wifi链接
       IOT_SetLogLevel(IOT_LOG_INFO);//aliyun模型初始化
-      //conn_mgr_start();
-    //  ESP_LOGI(TAG, "主函数的任务..........................................................");
+
       xTaskCreate(&adc1_get_data_task, "adc1_get_data_task", 8192, NULL, 5, &adc1_get_data_task_Handler);
       xTaskCreate((void (*)(void *))ota_main, "ota_example", 20480, NULL, 15, NULL);
       xTaskCreate(&http_test_task, "http_test_task", 8192, NULL, 7, &http_test_task_Handler);//高优先级通过获取二值信号量

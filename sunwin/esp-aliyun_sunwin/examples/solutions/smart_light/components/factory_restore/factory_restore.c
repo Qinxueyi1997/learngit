@@ -27,10 +27,13 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/semphr.h"
 #include "freertos/timers.h"
-
 #include "dm_wrapper.h"
 #include "conn_mgr.h"
-
+#include "esp_sleep.h"
+#include "esp_log.h"
+#include "driver/rtc_io.h"
+#include <time.h>
+#include <sys/time.h>
 #define FACTORY_QUICK_REBOOT_TIMEOUT        (CONFIG_FACTORY_QUICK_REBOOT_TIMEOUT * 1000)
 #define FACTORY_QUICK_REBOOT_MAX_TIMES      CONFIG_FACTORY_QUICK_REBOOT_MAX_TIMES
 #define FACTORY_QUICK_REBOOT_TIMES          "q_rt"

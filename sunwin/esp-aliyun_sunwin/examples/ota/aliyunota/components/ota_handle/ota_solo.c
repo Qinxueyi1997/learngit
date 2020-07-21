@@ -13,7 +13,6 @@
 #include "mqtt_api.h"
 #include "ota_api.h"
 #include "dm_wrapper.h"
-
 void HAL_Reboot();
 
 char g_product_key[IOTX_PRODUCT_KEY_LEN + 1] = {0};

@@ -2,7 +2,6 @@
 # Automatically generated file. DO NOT EDIT.
 # Espressif IoT Development Framework (ESP-IDF) Project Configuration
 #
-CONFIG_IDF_CMAKE=y
 CONFIG_IDF_TARGET="esp32"
 CONFIG_IDF_TARGET_ESP32=y
 CONFIG_IDF_FIRMWARE_CHIP_ID=0x0000
@@ -11,6 +10,8 @@ CONFIG_IDF_FIRMWARE_CHIP_ID=0x0000
 # SDK tool configuration
 #
 CONFIG_SDK_TOOLPREFIX="xtensa-esp32-elf-"
+CONFIG_SDK_PYTHON="python"
+CONFIG_SDK_MAKE_WARN_UNDEFINED_VARIABLES=y
 # end of SDK tool configuration
 
 #
@@ -65,7 +66,15 @@ CONFIG_BOOTLOADER_RESERVE_RTC_SIZE=0
 #
 # Serial flasher config
 #
+CONFIG_ESPTOOLPY_PORT="/dev/ttyUSB0"
+CONFIG_ESPTOOLPY_BAUD_115200B=y
+# CONFIG_ESPTOOLPY_BAUD_230400B is not set
+# CONFIG_ESPTOOLPY_BAUD_921600B is not set
+# CONFIG_ESPTOOLPY_BAUD_2MB is not set
+# CONFIG_ESPTOOLPY_BAUD_OTHER is not set
 CONFIG_ESPTOOLPY_BAUD_OTHER_VAL=115200
+CONFIG_ESPTOOLPY_BAUD=115200
+CONFIG_ESPTOOLPY_COMPRESSED=y
 # CONFIG_ESPTOOLPY_FLASHMODE_QIO is not set
 # CONFIG_ESPTOOLPY_FLASHMODE_QOUT is not set
 CONFIG_ESPTOOLPY_FLASHMODE_DIO=y
@@ -101,18 +110,6 @@ CONFIG_ESPTOOLPY_MONITOR_BAUD=115200
 # end of Serial flasher config
 
 #
-# Partition Table
-#
-# CONFIG_PARTITION_TABLE_SINGLE_APP is not set
-# CONFIG_PARTITION_TABLE_TWO_OTA is not set
-CONFIG_PARTITION_TABLE_CUSTOM=y
-CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions_esp32.csv"
-CONFIG_PARTITION_TABLE_FILENAME="partitions_esp32.csv"
-CONFIG_PARTITION_TABLE_OFFSET=0x8000
-CONFIG_PARTITION_TABLE_MD5=y
-# end of Partition Table
-
-#
 # Example Configuration
 #
 # CONFIG_EXAMPLE_ADC2_CHANNEL_0 is not set
@@ -130,6 +127,18 @@ CONFIG_EXAMPLE_DAC_CHANNEL_1=y
 # CONFIG_EXAMPLE_DAC_CHANNEL_2 is not set
 CONFIG_EXAMPLE_DAC_CHANNEL=0
 # end of Example Configuration
+
+#
+# Partition Table
+#
+# CONFIG_PARTITION_TABLE_SINGLE_APP is not set
+# CONFIG_PARTITION_TABLE_TWO_OTA is not set
+CONFIG_PARTITION_TABLE_CUSTOM=y
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions_esp32.csv"
+CONFIG_PARTITION_TABLE_FILENAME="partitions_esp32.csv"
+CONFIG_PARTITION_TABLE_OFFSET=0x8000
+CONFIG_PARTITION_TABLE_MD5=y
+# end of Partition Table
 
 #
 # Compiler options
@@ -238,6 +247,52 @@ CONFIG_EFUSE_MAX_BLK_LEN=192
 # end of eFuse Bit Manager
 
 #
+# iotkit embedded
+#
+
+#
+# Aliyun linkkit device version
+#
+CONFIG_LINKKIT_FIRMWARE_VERSION="0.0.1"
+# end of Aliyun linkkit device version
+
+#
+# Aliyun linkkit awss config
+#
+CONFIG_AWSS_ENCRYPT_TYPE=3
+CONFIG_AWSS_CONN_ENCRYPT_TYPE=4
+CONFIG_AWSS_TIMEOUT_INTERVAL_MS=180000
+CONFIG_AWSS_CHANNELSCAN_INTERVAL_MS=200
+# end of Aliyun linkkit awss config
+
+#
+# Aliyun linkkit network config
+#
+# CONFIG_SUPPORT_TCP is not set
+CONFIG_TCP_ESTABLISH_TIMEOUT_MS=10000
+CONFIG_TLS_ESTABLISH_TIMEOUT_MS=10000
+# end of Aliyun linkkit network config
+
+#
+# Aliyun linkkit device model config
+#
+# CONFIG_DEVICE_MODEL_GATEWAY is not set
+# end of Aliyun linkkit device model config
+
+#
+# Aliyun linkkit mqtt config
+#
+CONFIG_MQTT_DIRECT=y
+# end of Aliyun linkkit mqtt config
+
+CONFIG_HAL_SEM_MAX_COUNT=255
+CONFIG_HAL_SEM_INIT_COUNT=0
+CONFIG_HAL_TLS_HANDSHAKE_TIMEOUT=180
+# CONFIG_HAL_USE_CUSTOMER_AP_SSID is not set
+CONFIG_AP_SSID_KEY="apssid"
+# end of iotkit embedded
+
+#
 # ESP-TLS
 #
 CONFIG_ESP_TLS_USING_MBEDTLS=y
@@ -308,6 +363,16 @@ CONFIG_ESP32_DPORT_DIS_INTERRUPT_LVL=5
 #
 # CONFIG_PM_ENABLE is not set
 # end of Power Management
+
+#
+# Cache config
+#
+# end of Cache config
+
+CONFIG_ESP32S2_TRACEMEM_RESERVE_DRAM=0x0
+CONFIG_ESP32S2_ULP_COPROC_RESERVE_MEM=0
+CONFIG_ESP32S2_DEBUG_OCDAWARE=y
+CONFIG_ESP32S2_BROWNOUT_DET=y
 
 #
 # ADC-Calibration
@@ -937,52 +1002,6 @@ CONFIG_WIFI_PROV_AUTOSTOP_TIMEOUT=30
 #
 CONFIG_WPA_MBEDTLS_CRYPTO=y
 # end of Supplicant
-
-#
-# iotkit embedded
-#
-
-#
-# Aliyun linkkit device version
-#
-CONFIG_LINKKIT_FIRMWARE_VERSION="0.0.1"
-# end of Aliyun linkkit device version
-
-#
-# Aliyun linkkit awss config
-#
-CONFIG_AWSS_ENCRYPT_TYPE=3
-CONFIG_AWSS_CONN_ENCRYPT_TYPE=4
-CONFIG_AWSS_TIMEOUT_INTERVAL_MS=180000
-CONFIG_AWSS_CHANNELSCAN_INTERVAL_MS=200
-# end of Aliyun linkkit awss config
-
-#
-# Aliyun linkkit network config
-#
-# CONFIG_SUPPORT_TCP is not set
-CONFIG_TCP_ESTABLISH_TIMEOUT_MS=10000
-CONFIG_TLS_ESTABLISH_TIMEOUT_MS=10000
-# end of Aliyun linkkit network config
-
-#
-# Aliyun linkkit device model config
-#
-# CONFIG_DEVICE_MODEL_GATEWAY is not set
-# end of Aliyun linkkit device model config
-
-#
-# Aliyun linkkit mqtt config
-#
-CONFIG_MQTT_DIRECT=y
-# end of Aliyun linkkit mqtt config
-
-CONFIG_HAL_SEM_MAX_COUNT=255
-CONFIG_HAL_SEM_INIT_COUNT=0
-CONFIG_HAL_TLS_HANDSHAKE_TIMEOUT=180
-# CONFIG_HAL_USE_CUSTOMER_AP_SSID is not set
-CONFIG_AP_SSID_KEY="apssid"
-# end of iotkit embedded
 # end of Component config
 
 #
@@ -993,6 +1012,8 @@ CONFIG_AP_SSID_KEY="apssid"
 
 # Deprecated options for backward compatibility
 CONFIG_TOOLPREFIX="xtensa-esp32-elf-"
+CONFIG_PYTHON="python"
+CONFIG_MAKE_WARN_UNDEFINED_VARIABLES=y
 # CONFIG_LOG_BOOTLOADER_LEVEL_NONE is not set
 # CONFIG_LOG_BOOTLOADER_LEVEL_ERROR is not set
 # CONFIG_LOG_BOOTLOADER_LEVEL_WARN is not set

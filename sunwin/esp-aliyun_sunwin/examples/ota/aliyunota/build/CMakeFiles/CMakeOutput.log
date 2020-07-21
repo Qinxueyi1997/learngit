@@ -1,5 +1,5 @@
 The target system is: Generic -  - 
-The host system is: Linux - 5.3.0-46-generic - x86_64
+The host system is: Linux - 5.3.0-51-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /home/qinxueyi/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc 
 Build flags: -mlongcalls;-Wno-frame-address
@@ -11,7 +11,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/qinxueyi/esp32/esp-aliyun/examples/ota/aliyunota/build/CMakeFiles/3.10.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/qinxueyi/esp_new/esp/adc1_suanfa_time_low_power/build/CMakeFiles/3.10.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /home/qinxueyi/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ 
@@ -24,7 +24,7 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/qinxueyi/esp32/esp-aliyun/examples/ota/aliyunota/build/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/qinxueyi/esp_new/esp/adc1_suanfa_time_low_power/build/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
 
 Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
 xtensa-esp32-elf-gcc (crosstool-NG esp-2019r2) 8.2.0
@@ -33,19 +33,19 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/qinxueyi/esp32/esp-aliyun/examples/ota/aliyunota/build/CMakeFiles/CMakeTmp
+Change Dir: /home/qinxueyi/esp_new/esp/adc1_suanfa_time_low_power/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_75def"
-[1/2] Building C object CMakeFiles/cmTC_75def.dir/testCCompiler.c.obj
-[2/2] Linking C executable cmTC_75def
+Run Build Command:"/usr/bin/ninja" "cmTC_7479f"
+[1/2] Building C object CMakeFiles/cmTC_7479f.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_7479f
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/qinxueyi/esp32/esp-aliyun/examples/ota/aliyunota/build/CMakeFiles/CMakeTmp
+Change Dir: /home/qinxueyi/esp_new/esp/adc1_suanfa_time_low_power/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_1766e"
-[1/2] Building C object CMakeFiles/cmTC_1766e.dir/CMakeCCompilerABI.c.obj
-[2/2] Linking C executable cmTC_1766e
+Run Build Command:"/usr/bin/ninja" "cmTC_87163"
+[1/2] Building C object CMakeFiles/cmTC_87163.dir/CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_87163
 Using built-in specs.
 COLLECT_GCC=/home/qinxueyi/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
 COLLECT_LTO_WRAPPER=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper
@@ -55,18 +55,18 @@ Thread model: posix
 gcc version 8.2.0 (crosstool-NG esp-2019r2) 
 COMPILER_PATH=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/:/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/:/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/
 LIBRARY_PATH=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/:/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/:/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_1766e'
- /home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxuOi0p.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_1766e /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_1766e.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_1766e'
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_87163'
+ /home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7CMZ6Y.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_87163 /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_87163.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_87163'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(xtensa-esp32-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/qinxueyi/esp32/esp-aliyun/examples/ota/aliyunota/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/qinxueyi/esp_new/esp/adc1_suanfa_time_low_power/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/ninja" "cmTC_1766e"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_1766e.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [[2/2] Linking C executable cmTC_1766e]
+  ignore line: [Run Build Command:"/usr/bin/ninja" "cmTC_87163"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_87163.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [[2/2] Linking C executable cmTC_87163]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/home/qinxueyi/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper]
@@ -76,27 +76,27 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 8.2.0 (crosstool-NG esp-2019r2) ]
   ignore line: [COMPILER_PATH=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/:/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/:/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/]
   ignore line: [LIBRARY_PATH=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/:/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/:/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_1766e']
-  link line: [ /home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxuOi0p.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_1766e /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_1766e.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_87163']
+  link line: [ /home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7CMZ6Y.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_87163 /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_87163.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o]
     arg [/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccxuOi0p.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc7CMZ6Y.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_1766e] ==> ignore
+    arg [cmTC_87163] ==> ignore
     arg [/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o] ==> ignore
     arg [/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o] ==> ignore
     arg [/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o] ==> ignore
     arg [-L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0] ==> dir [/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0]
     arg [-L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc] ==> dir [/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc]
     arg [-L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib] ==> dir [/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib]
-    arg [CMakeFiles/cmTC_1766e.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [CMakeFiles/cmTC_87163.dir/CMakeCCompilerABI.c.obj] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-lc] ==> lib [c]
     arg [-lnosys] ==> lib [nosys]
@@ -115,11 +115,11 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/qinxueyi/esp32/esp-aliyun/examples/ota/aliyunota/build/CMakeFiles/CMakeTmp
+Change Dir: /home/qinxueyi/esp_new/esp/adc1_suanfa_time_low_power/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_c95bd"
-[1/2] Building C object CMakeFiles/cmTC_c95bd.dir/feature_tests.c.obj
-[2/2] Linking C executable cmTC_c95bd
+Run Build Command:"/usr/bin/ninja" "cmTC_264a5"
+[1/2] Building C object CMakeFiles/cmTC_264a5.dir/feature_tests.c.obj
+[2/2] Linking C executable cmTC_264a5
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -129,11 +129,11 @@ Run Build Command:"/usr/bin/ninja" "cmTC_c95bd"
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/qinxueyi/esp32/esp-aliyun/examples/ota/aliyunota/build/CMakeFiles/CMakeTmp
+Change Dir: /home/qinxueyi/esp_new/esp/adc1_suanfa_time_low_power/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_f4216"
-[1/2] Building C object CMakeFiles/cmTC_f4216.dir/feature_tests.c.obj
-[2/2] Linking C executable cmTC_f4216
+Run Build Command:"/usr/bin/ninja" "cmTC_40328"
+[1/2] Building C object CMakeFiles/cmTC_40328.dir/feature_tests.c.obj
+[2/2] Linking C executable cmTC_40328
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -143,11 +143,11 @@ Run Build Command:"/usr/bin/ninja" "cmTC_f4216"
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/qinxueyi/esp32/esp-aliyun/examples/ota/aliyunota/build/CMakeFiles/CMakeTmp
+Change Dir: /home/qinxueyi/esp_new/esp/adc1_suanfa_time_low_power/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_1263c"
-[1/2] Building C object CMakeFiles/cmTC_1263c.dir/feature_tests.c.obj
-[2/2] Linking C executable cmTC_1263c
+Run Build Command:"/usr/bin/ninja" "cmTC_cfa93"
+[1/2] Building C object CMakeFiles/cmTC_cfa93.dir/feature_tests.c.obj
+[2/2] Linking C executable cmTC_cfa93
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -155,19 +155,19 @@ Run Build Command:"/usr/bin/ninja" "cmTC_1263c"
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/qinxueyi/esp32/esp-aliyun/examples/ota/aliyunota/build/CMakeFiles/CMakeTmp
+Change Dir: /home/qinxueyi/esp_new/esp/adc1_suanfa_time_low_power/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_b876f"
-[1/2] Building CXX object CMakeFiles/cmTC_b876f.dir/testCXXCompiler.cxx.obj
-[2/2] Linking CXX executable cmTC_b876f
+Run Build Command:"/usr/bin/ninja" "cmTC_1fd2e"
+[1/2] Building CXX object CMakeFiles/cmTC_1fd2e.dir/testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_1fd2e
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/qinxueyi/esp32/esp-aliyun/examples/ota/aliyunota/build/CMakeFiles/CMakeTmp
+Change Dir: /home/qinxueyi/esp_new/esp/adc1_suanfa_time_low_power/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_6603d"
-[1/2] Building CXX object CMakeFiles/cmTC_6603d.dir/CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_6603d
+Run Build Command:"/usr/bin/ninja" "cmTC_0e78c"
+[1/2] Building CXX object CMakeFiles/cmTC_0e78c.dir/CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_0e78c
 Using built-in specs.
 COLLECT_GCC=/home/qinxueyi/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++
 COLLECT_LTO_WRAPPER=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper
@@ -177,18 +177,18 @@ Thread model: posix
 gcc version 8.2.0 (crosstool-NG esp-2019r2) 
 COMPILER_PATH=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/:/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/:/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/
 LIBRARY_PATH=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/:/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/:/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_6603d'
- /home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBHkH8D.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_6603d /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_6603d.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_6603d'
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_0e78c'
+ /home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2fVQK6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_0e78c /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_0e78c.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_0e78c'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(xtensa-esp32-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/qinxueyi/esp32/esp-aliyun/examples/ota/aliyunota/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/qinxueyi/esp_new/esp/adc1_suanfa_time_low_power/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/ninja" "cmTC_6603d"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_6603d.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [[2/2] Linking CXX executable cmTC_6603d]
+  ignore line: [Run Build Command:"/usr/bin/ninja" "cmTC_0e78c"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_0e78c.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [[2/2] Linking CXX executable cmTC_0e78c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/home/qinxueyi/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++]
   ignore line: [COLLECT_LTO_WRAPPER=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper]
@@ -198,27 +198,27 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 8.2.0 (crosstool-NG esp-2019r2) ]
   ignore line: [COMPILER_PATH=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/:/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/:/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/]
   ignore line: [LIBRARY_PATH=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/:/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/:/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_6603d']
-  link line: [ /home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBHkH8D.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_6603d /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_6603d.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_0e78c']
+  link line: [ /home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2fVQK6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_0e78c /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc -L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_0e78c.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o /home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o]
     arg [/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/home/qinxueyi/esp/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccBHkH8D.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc2fVQK6.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_6603d] ==> ignore
+    arg [cmTC_0e78c] ==> ignore
     arg [/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o] ==> ignore
     arg [/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o] ==> ignore
     arg [/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o] ==> ignore
     arg [-L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0] ==> dir [/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0]
     arg [-L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc] ==> dir [/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc]
     arg [-L/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib] ==> dir [/home/qinxueyi/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib]
-    arg [CMakeFiles/cmTC_6603d.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [CMakeFiles/cmTC_0e78c.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc] ==> lib [gcc]
@@ -239,11 +239,11 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/qinxueyi/esp32/esp-aliyun/examples/ota/aliyunota/build/CMakeFiles/CMakeTmp
+Change Dir: /home/qinxueyi/esp_new/esp/adc1_suanfa_time_low_power/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_d342d"
-[1/2] Building CXX object CMakeFiles/cmTC_d342d.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_d342d
+Run Build Command:"/usr/bin/ninja" "cmTC_dbfaa"
+[1/2] Building CXX object CMakeFiles/cmTC_dbfaa.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_dbfaa
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -306,11 +306,11 @@ Run Build Command:"/usr/bin/ninja" "cmTC_d342d"
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/qinxueyi/esp32/esp-aliyun/examples/ota/aliyunota/build/CMakeFiles/CMakeTmp
+Change Dir: /home/qinxueyi/esp_new/esp/adc1_suanfa_time_low_power/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_549d6"
-[1/2] Building CXX object CMakeFiles/cmTC_549d6.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_549d6
+Run Build Command:"/usr/bin/ninja" "cmTC_230a8"
+[1/2] Building CXX object CMakeFiles/cmTC_230a8.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_230a8
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -373,11 +373,11 @@ Run Build Command:"/usr/bin/ninja" "cmTC_549d6"
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/qinxueyi/esp32/esp-aliyun/examples/ota/aliyunota/build/CMakeFiles/CMakeTmp
+Change Dir: /home/qinxueyi/esp_new/esp/adc1_suanfa_time_low_power/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_5036d"
-[1/2] Building CXX object CMakeFiles/cmTC_5036d.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_5036d
+Run Build Command:"/usr/bin/ninja" "cmTC_d23a4"
+[1/2] Building CXX object CMakeFiles/cmTC_d23a4.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_d23a4
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -440,11 +440,11 @@ Run Build Command:"/usr/bin/ninja" "cmTC_5036d"
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/qinxueyi/esp32/esp-aliyun/examples/ota/aliyunota/build/CMakeFiles/CMakeTmp
+Change Dir: /home/qinxueyi/esp_new/esp/adc1_suanfa_time_low_power/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_2f8e2"
-[1/2] Building CXX object CMakeFiles/cmTC_2f8e2.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_2f8e2
+Run Build Command:"/usr/bin/ninja" "cmTC_69ecd"
+[1/2] Building CXX object CMakeFiles/cmTC_69ecd.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_69ecd
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
