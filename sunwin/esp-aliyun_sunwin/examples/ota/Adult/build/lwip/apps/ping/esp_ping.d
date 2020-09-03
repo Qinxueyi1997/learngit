@@ -3,7 +3,7 @@ apps/ping/esp_ping.o: \
  /home/qinxueyi/esp/esp-idf/components/lwip/include/apps/esp_ping.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h \
  /home/qinxueyi/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h \
  /home/qinxueyi/esp/esp-idf/components/lwip/port/esp32/include/lwipopts.h \
@@ -68,7 +68,7 @@ apps/ping/esp_ping.o: \
 
 /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h:
 

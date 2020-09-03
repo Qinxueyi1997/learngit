@@ -1,7 +1,7 @@
 src/esp_eth_mac_dm9051.o: \
  /home/qinxueyi/esp/esp-idf/components/esp_eth/src/esp_eth_mac_dm9051.c \
  /home/qinxueyi/esp/esp-idf/components/driver/include/driver/gpio.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_types.h \
@@ -74,7 +74,7 @@ src/esp_eth_mac_dm9051.o: \
 
 /home/qinxueyi/esp/esp-idf/components/driver/include/driver/gpio.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h:
 

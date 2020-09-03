@@ -1,6 +1,6 @@
 src/mac_addr.o: \
  /home/qinxueyi/esp/esp-idf/components/esp_common/src/mac_addr.c \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -15,7 +15,7 @@ src/mac_addr.o: \
  /home/qinxueyi/esp/esp-idf/components/efuse/esp32/include/esp_efuse_table.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/efuse.h
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_system.h:
 

@@ -1,5 +1,5 @@
 spiram.o: /home/qinxueyi/esp/esp-idf/components/esp32/spiram.c \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -57,7 +57,7 @@ spiram.o: /home/qinxueyi/esp/esp-idf/components/esp32/spiram.c \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/cache.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h:
 

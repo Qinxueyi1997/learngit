@@ -1,7 +1,7 @@
 src/ff.o: /home/qinxueyi/esp/esp-idf/components/fatfs/src/ff.c \
  /home/qinxueyi/esp/esp-idf/components/fatfs/src/ff.h \
  /home/qinxueyi/esp/esp-idf/components/fatfs/src/ffconf.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -43,7 +43,7 @@ src/ff.o: /home/qinxueyi/esp/esp-idf/components/fatfs/src/ff.c \
 
 /home/qinxueyi/esp/esp-idf/components/fatfs/src/ffconf.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

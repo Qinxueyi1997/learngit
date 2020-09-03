@@ -6,7 +6,7 @@ panic.o: /home/qinxueyi/esp/esp-idf/components/esp32/panic.c \
  /home/qinxueyi/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/rtc.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -112,7 +112,7 @@ panic.o: /home/qinxueyi/esp/esp-idf/components/esp32/panic.c \
 
 /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 

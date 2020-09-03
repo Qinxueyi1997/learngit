@@ -2,7 +2,7 @@ src/esp_err_to_name.o: \
  /home/qinxueyi/esp/esp-idf/components/esp_common/src/esp_err_to_name.c \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
@@ -195,7 +195,7 @@ src/esp_err_to_name.o: \
 
 /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 

@@ -1,11 +1,11 @@
 app_main.o: \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/main/app_main.c \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/main/app_main.c \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/time.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/sys/time.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/sys/unistd.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
@@ -213,20 +213,20 @@ app_main.o: \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/include/esp_app_format.h \
- /home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_compat.h \
- /home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_defs.h \
- /home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_types.h \
- /home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_config.h \
- /home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_list.h \
- /home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_compat.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/components/ota_handle/ota_solo.h \
- /home/qinxueyi/esp/esp-aliyun/conn_mgr/conn_mgr.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/main/ahu_sleep/include/ahu_utils.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_compat.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_defs.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_types.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_config.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_list.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_compat.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/components/ota_handle/ota_solo.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/conn_mgr/conn_mgr.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/main/ahu_sleep/include/ahu_utils.h \
  /home/qinxueyi/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/main/ahu_sleep/include/ahu_respirate.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/main/ahu_sleep/include/ahu_statistics.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/main/ahu_sleep/include/ahu_wavelet.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/main/ahu_sleep/include/ahu_dsp.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/main/ahu_sleep/include/ahu_respirate.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/main/ahu_sleep/include/ahu_statistics.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/main/ahu_sleep/include/ahu_wavelet.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/main/ahu_sleep/include/ahu_dsp.h \
  /home/qinxueyi/esp/esp-idf/components/ulp/include/esp32/ulp.h \
  /home/qinxueyi/esp/esp-idf/components/ulp/include/ulp_common.h \
  /home/qinxueyi/esp/esp-idf/components/driver/include/driver/rtc_io.h \
@@ -249,7 +249,7 @@ app_main.o: \
 
 /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -665,33 +665,33 @@ app_main.o: \
 
 /home/qinxueyi/esp/esp-idf/components/bootloader_support/include/esp_app_format.h:
 
-/home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_compat.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_compat.h:
 
-/home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_defs.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_defs.h:
 
-/home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_types.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_types.h:
 
-/home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_config.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_config.h:
 
-/home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_list.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_list.h:
 
-/home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_compat.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_compat.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/components/ota_handle/ota_solo.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/components/ota_handle/ota_solo.h:
 
-/home/qinxueyi/esp/esp-aliyun/conn_mgr/conn_mgr.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/conn_mgr/conn_mgr.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/main/ahu_sleep/include/ahu_utils.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/main/ahu_sleep/include/ahu_utils.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp32/include/rom/ets_sys.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/main/ahu_sleep/include/ahu_respirate.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/main/ahu_sleep/include/ahu_respirate.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/main/ahu_sleep/include/ahu_statistics.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/main/ahu_sleep/include/ahu_statistics.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/main/ahu_sleep/include/ahu_wavelet.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/main/ahu_sleep/include/ahu_wavelet.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/main/ahu_sleep/include/ahu_dsp.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/main/ahu_sleep/include/ahu_dsp.h:
 
 /home/qinxueyi/esp/esp-idf/components/ulp/include/esp32/ulp.h:
 
@@ -714,4 +714,3 @@ app_main.o: \
 /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/rtc.h:
 
 /home/qinxueyi/esp/esp-idf/components/soc/include/soc/rtc_periph.h:
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/main/./app_main.c:

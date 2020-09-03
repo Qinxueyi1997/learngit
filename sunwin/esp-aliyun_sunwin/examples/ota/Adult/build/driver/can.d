@@ -1,5 +1,5 @@
 can.o: /home/qinxueyi/esp/esp-idf/components/driver/can.c \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -73,7 +73,7 @@ can.o: /home/qinxueyi/esp/esp-idf/components/driver/can.c \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
  /home/qinxueyi/esp/esp-idf/components/driver/include/driver/can.h
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

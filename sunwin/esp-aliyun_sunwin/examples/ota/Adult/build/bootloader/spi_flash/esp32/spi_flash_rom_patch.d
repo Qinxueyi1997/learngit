@@ -1,6 +1,6 @@
 esp32/spi_flash_rom_patch.o: \
  /home/qinxueyi/esp/esp-idf/components/spi_flash/esp32/spi_flash_rom_patch.c \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/bootloader/../include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/bootloader/../include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h \
@@ -16,7 +16,7 @@ esp32/spi_flash_rom_patch.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/bootloader/../include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/bootloader/../include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 

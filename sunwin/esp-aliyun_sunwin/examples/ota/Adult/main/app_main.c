@@ -499,7 +499,7 @@ static void adc1_get_data_task(void *pvParameters)
 	int N_seg_1 = 75;
     //心率每段信号100个数据点
     int N_heart = 1000;
-     int N_heart_1 = 750;
+    int N_heart_1 = 750;
     //重迭点数
     double seg_energy = 0.;
     double seg_pre_abssum = 0.;
@@ -511,7 +511,22 @@ static void adc1_get_data_task(void *pvParameters)
     int not_people_counter = 0;//重物判断参数
    
 
-  //每次取100个数据点进行检测
+    double * median_energy_vec = (double *)malloc(adative_range*sizeof(double));
+    memset(median_energy_vec, 0x00, adative_range*sizeof(double));
+
+    double * median_resp_vec = (double *)malloc(adative_range*sizeof(double));
+    memset(median_resp_vec, 0x00, adative_range*sizeof(double));
+
+    double * median_heart_vec = (double *)malloc(adative_range*sizeof(double));
+    memset(median_heart_vec, 0x00, adative_range*sizeof(double));
+
+    double * median_prdiff_vec = (double *)malloc(adative_range*sizeof(double));
+    memset(median_prdiff_vec, 0x00, adative_range*sizeof(double));
+
+    double * median_absmax_vec = (double *)malloc(adative_range*sizeof(double));
+    memset(median_absmax_vec, 0x00, adative_range*sizeof(double));
+
+    //每次取100个数据点进行检测
     double * X_X = (double *)malloc(N_seg*sizeof(double));
     double * Pr_X = (double *)malloc(N_seg*sizeof(double));
 	 	//用于存放前面重叠的点
@@ -799,7 +814,7 @@ static void adc1_get_data_task(void *pvParameters)
     }
     free(X_X); X_X = NULL;
     free(Pr_X); Pr_X = NULL;
-	free(X_X_heart); X_X_heart = NULL;
+    free(X_X_heart); X_X_heart = NULL;
     free(X_X_1); X_X_1 = NULL;
     free(Pr_X_1); Pr_X_1 = NULL;
     free(X_X_2); X_X_2 = NULL;

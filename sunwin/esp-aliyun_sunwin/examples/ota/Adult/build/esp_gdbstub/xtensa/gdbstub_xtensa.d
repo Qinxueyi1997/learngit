@@ -13,7 +13,7 @@ xtensa/gdbstub_xtensa.o: \
  /home/qinxueyi/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
  /home/qinxueyi/esp/esp-idf/components/esp_gdbstub/esp32/gdbstub_target_config.h \
  /home/qinxueyi/esp/esp-idf/components/esp_gdbstub/private_include/esp_gdbstub_common.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/cpu.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
@@ -48,7 +48,7 @@ xtensa/gdbstub_xtensa.o: \
 
 /home/qinxueyi/esp/esp-idf/components/esp_gdbstub/private_include/esp_gdbstub_common.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/cpu.h:
 

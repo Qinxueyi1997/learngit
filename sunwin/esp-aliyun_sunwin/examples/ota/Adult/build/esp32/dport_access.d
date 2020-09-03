@@ -1,6 +1,6 @@
 dport_access.o: \
  /home/qinxueyi/esp/esp-idf/components/esp32/dport_access.c \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -64,7 +64,7 @@ dport_access.o: \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/portmacro.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/xtensa/core-macros.h
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h:
 

@@ -1,7 +1,7 @@
 esp32/rtc_time.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/rtc_time.c \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/bootloader/../include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/bootloader/../include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/rtc.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_assert.h \
@@ -31,7 +31,7 @@ esp32/rtc_time.o: \
 
 /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/bootloader/../include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/bootloader/../include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/rtc.h:
 

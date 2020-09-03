@@ -1,6 +1,6 @@
 src/esp_efuse_fields.o: \
  /home/qinxueyi/esp/esp-idf/components/efuse/src/esp_efuse_fields.c \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/efuse/include/esp_efuse.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -21,7 +21,7 @@ src/esp_efuse_fields.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/apb_ctrl_reg.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/efuse.h
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/efuse/include/esp_efuse.h:
 

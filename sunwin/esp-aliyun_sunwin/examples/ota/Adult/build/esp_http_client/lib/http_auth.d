@@ -1,7 +1,7 @@
 lib/http_auth.o: \
  /home/qinxueyi/esp/esp-idf/components/esp_http_client/lib/http_auth.c \
  /home/qinxueyi/esp/esp-idf/components/esp_netif/include/esp_netif.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
  /home/qinxueyi/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_types_private.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
@@ -118,7 +118,7 @@ lib/http_auth.o: \
 
 /home/qinxueyi/esp/esp-idf/components/esp_netif/include/esp_netif.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/Adult/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/Adult/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h:
 
