@@ -2,7 +2,7 @@ esp-mqtt/lib/mqtt_msg.o: \
  /home/qinxueyi/esp/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_msg.c \
  /home/qinxueyi/esp/esp-idf/components/mqtt/esp-mqtt/lib/include/mqtt_msg.h \
  /home/qinxueyi/esp/esp-idf/components/mqtt/esp-mqtt/include/mqtt_config.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/mqtt/esp-mqtt/lib/include/platform.h \
  /home/qinxueyi/esp/esp-idf/components/mqtt/esp-mqtt/lib/include/platform_esp32_idf.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
@@ -90,7 +90,7 @@ esp-mqtt/lib/mqtt_msg.o: \
 
 /home/qinxueyi/esp/esp-idf/components/mqtt/esp-mqtt/include/mqtt_config.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/mqtt/esp-mqtt/lib/include/platform.h:
 

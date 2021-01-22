@@ -1,6 +1,6 @@
 locks.o: /home/qinxueyi/esp/esp-idf/components/newlib/locks.c \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/cpu.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/xtensa/corebits.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
@@ -42,7 +42,7 @@ locks.o: /home/qinxueyi/esp/esp-idf/components/newlib/locks.c \
 
 /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/cpu.h:
 

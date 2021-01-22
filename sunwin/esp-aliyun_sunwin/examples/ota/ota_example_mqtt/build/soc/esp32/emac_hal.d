@@ -1,6 +1,6 @@
 esp32/emac_hal.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/emac_hal.c \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h \
@@ -29,7 +29,7 @@ esp32/emac_hal.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/emac_mac_struct.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/emac_ext_struct.h
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h:
 

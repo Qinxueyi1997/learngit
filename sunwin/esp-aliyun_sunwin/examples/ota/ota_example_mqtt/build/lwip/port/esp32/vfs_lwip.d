@@ -3,7 +3,7 @@ port/esp32/vfs_lwip.o: \
  /home/qinxueyi/esp/esp-idf/components/vfs/include/esp_vfs.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
@@ -83,7 +83,7 @@ port/esp32/vfs_lwip.o: \
 
 /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

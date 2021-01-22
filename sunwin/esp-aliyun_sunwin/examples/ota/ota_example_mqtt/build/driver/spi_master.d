@@ -3,7 +3,7 @@ spi_master.o: /home/qinxueyi/esp/esp-idf/components/driver/spi_master.c \
  /home/qinxueyi/esp/esp-idf/components/driver/include/driver/spi_common.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/soc/lldesc.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/soc/spi_periph.h \
@@ -89,7 +89,7 @@ spi_master.o: /home/qinxueyi/esp/esp-idf/components/driver/spi_master.c \
 
 /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/soc/include/soc/lldesc.h:
 

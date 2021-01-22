@@ -3,7 +3,7 @@ time.o: /home/qinxueyi/esp/esp-idf/components/newlib/time.c \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/time.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/sys/time.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -72,7 +72,7 @@ time.o: /home/qinxueyi/esp/esp-idf/components/newlib/time.c \
 
 /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 

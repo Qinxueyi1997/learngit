@@ -1,5 +1,5 @@
 queue.o: /home/qinxueyi/esp/esp-idf/components/freertos/queue.c \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -37,7 +37,7 @@ queue.o: /home/qinxueyi/esp/esp-idf/components/freertos/queue.c \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/list.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/queue.h
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

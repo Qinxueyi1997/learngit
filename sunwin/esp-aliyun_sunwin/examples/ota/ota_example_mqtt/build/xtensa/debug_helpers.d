@@ -1,6 +1,6 @@
 debug_helpers.o: \
  /home/qinxueyi/esp/esp-idf/components/xtensa/debug_helpers.c \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
@@ -19,7 +19,7 @@ debug_helpers.o: \
  /home/qinxueyi/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_types.h:
 

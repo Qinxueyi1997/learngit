@@ -4,7 +4,7 @@ WL_Ext_Perf.o: \
  /home/qinxueyi/esp/esp-idf/components/wear_levelling/private_include/WL_Flash.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/wear_levelling/private_include/Flash_Access.h \
  /home/qinxueyi/esp/esp-idf/components/wear_levelling/private_include/WL_Config.h \
  /home/qinxueyi/esp/esp-idf/components/wear_levelling/private_include/WL_State.h \
@@ -21,7 +21,7 @@ WL_Ext_Perf.o: \
 
 /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/wear_levelling/private_include/Flash_Access.h:
 

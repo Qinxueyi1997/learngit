@@ -2,7 +2,7 @@ src/tls/x509v3.o: \
  /home/qinxueyi/esp/esp-idf/components/wpa_supplicant/src/tls/x509v3.c \
  /home/qinxueyi/esp/esp-idf/components/wpa_supplicant/src/utils/includes.h \
  /home/qinxueyi/esp/esp-idf/components/wpa_supplicant/port/include/supplicant_opt.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/qinxueyi/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.h \
  /home/qinxueyi/esp/esp-idf/components/wpa_supplicant/src/utils/common.h \
@@ -42,7 +42,7 @@ src/tls/x509v3.o: \
 
 /home/qinxueyi/esp/esp-idf/components/wpa_supplicant/port/include/supplicant_opt.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 

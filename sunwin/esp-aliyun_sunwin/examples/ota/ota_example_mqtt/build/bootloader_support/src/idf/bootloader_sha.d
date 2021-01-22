@@ -3,7 +3,7 @@ src/idf/bootloader_sha.o: \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_sha.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha256.h \
  /home/qinxueyi/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
  /home/qinxueyi/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config.h \
@@ -18,7 +18,7 @@ src/idf/bootloader_sha.o: \
 
 /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha256.h:
 

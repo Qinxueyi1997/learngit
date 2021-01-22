@@ -1,7 +1,7 @@
 expat/expat/lib/xmlparse.o: \
  /home/qinxueyi/esp/esp-idf/components/expat/expat/expat/lib/xmlparse.c \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/sys/time.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/errno.h \
  /home/qinxueyi/esp/esp-idf/components/expat/port/include/expat_config.h \
@@ -16,7 +16,7 @@ expat/expat/lib/xmlparse.o: \
 
 /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/sys/time.h:
 

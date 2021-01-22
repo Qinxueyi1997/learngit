@@ -4,7 +4,7 @@ src/hal/spi_hal.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/hal/spi_ll.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/hal/hal_defs.h \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/soc/spi_periph.h \
@@ -31,7 +31,7 @@ src/hal/spi_hal.o: \
 
 /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 

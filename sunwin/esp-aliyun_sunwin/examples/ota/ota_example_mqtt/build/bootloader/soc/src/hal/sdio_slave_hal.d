@@ -10,7 +10,7 @@ src/hal/sdio_slave_hal.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/include/hal/sdio_slave_hal.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/soc/lldesc.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/hal/sdio_slave_ll.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/slc_reg.h \
@@ -42,7 +42,7 @@ src/hal/sdio_slave_hal.o: \
 
 /home/qinxueyi/esp/esp-idf/components/soc/include/soc/lldesc.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h:
 

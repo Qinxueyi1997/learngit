@@ -1,6 +1,6 @@
 src/esp32/secure_boot_signatures.o: \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/src/esp32/secure_boot_signatures.c \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_sha.h \
@@ -21,7 +21,7 @@ src/esp32/secure_boot_signatures.o: \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/sha.h \
  /home/qinxueyi/esp/esp-idf/components/bootloader/subproject/components/micro-ecc/micro-ecc/uECC.h
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h:
 

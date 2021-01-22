@@ -1,7 +1,7 @@
 mdns.o: /home/qinxueyi/esp/esp-idf/components/mdns/mdns.c \
  /home/qinxueyi/esp/esp-idf/components/mdns/include/mdns.h \
  /home/qinxueyi/esp/esp-idf/components/esp_netif/include/esp_netif.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
  /home/qinxueyi/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_types_private.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
@@ -133,7 +133,7 @@ mdns.o: /home/qinxueyi/esp/esp-idf/components/mdns/mdns.c \
 
 /home/qinxueyi/esp/esp-idf/components/esp_netif/include/esp_netif.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h:
 

@@ -23,7 +23,7 @@ esp32/rtc_sleep.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp32/include/esp32/dport_access.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
@@ -95,7 +95,7 @@ esp32/rtc_sleep.o: \
 
 /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp32/include/esp32/dport_access.h:
 

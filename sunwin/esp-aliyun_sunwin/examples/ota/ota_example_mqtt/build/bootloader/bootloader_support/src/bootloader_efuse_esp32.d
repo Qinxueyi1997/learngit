@@ -4,7 +4,7 @@ src/bootloader_efuse_esp32.o: \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_types.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
  /home/qinxueyi/esp/esp-idf/components/bootloader_support/include/esp_app_format.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/rtc.h \
@@ -26,7 +26,7 @@ src/bootloader_efuse_esp32.o: \
 
 /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_types.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/bootloader_support/include/esp_image_format.h:
 

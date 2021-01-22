@@ -2,7 +2,7 @@ port/esp32/aes.o: \
  /home/qinxueyi/esp/esp-idf/components/mbedtls/port/esp32/aes.c \
  /home/qinxueyi/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h \
  /home/qinxueyi/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config.h \
  /home/qinxueyi/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /home/qinxueyi/esp/esp-idf/components/mbedtls/port/include/esp_mem.h \
@@ -61,7 +61,7 @@ port/esp32/aes.o: \
 
 /home/qinxueyi/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config.h:
 

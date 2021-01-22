@@ -2,7 +2,7 @@ src/hal/spi_slave_hal.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/src/hal/spi_slave_hal.c \
  /home/qinxueyi/esp/esp-idf/components/soc/include/hal/spi_slave_hal.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/soc/lldesc.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_types.h \
@@ -26,7 +26,7 @@ src/hal/spi_slave_hal.o: \
 
 /home/qinxueyi/esp/esp-idf/components/soc/include/soc/lldesc.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h:
 

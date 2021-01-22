@@ -1,6 +1,6 @@
 spi_flash_os_func_noos.o: \
  /home/qinxueyi/esp/esp-idf/components/spi_flash/spi_flash_os_func_noos.c \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/spi_flash/include/esp_flash.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -27,7 +27,7 @@ spi_flash_os_func_noos.o: \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/spi_flash/include/esp_flash.h:
 

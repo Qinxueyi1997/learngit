@@ -1,8 +1,8 @@
 app_main.o: \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/main/app_main.c \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/main/app_main.c \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
@@ -96,14 +96,14 @@ app_main.o: \
  /home/qinxueyi/esp/esp-idf/components/esp_netif/include/esp_netif_sta_list.h \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log_internal.h \
- /home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_compat.h \
- /home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_defs.h \
- /home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_types.h \
- /home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_config.h \
- /home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_list.h \
- /home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_compat.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/components/ota_handle/ota_solo.h \
- /home/qinxueyi/esp/esp-aliyun/conn_mgr/conn_mgr.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_compat.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_defs.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_types.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_config.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_list.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_compat.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/components/ota_handle/ota_solo.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/conn_mgr/conn_mgr.h \
  /home/qinxueyi/esp/esp-idf/components/esp_event/include/esp_event_loop.h \
  /home/qinxueyi/esp/esp-idf/components/esp_event/include/esp_event.h
 
@@ -111,7 +111,7 @@ app_main.o: \
 
 /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -299,23 +299,23 @@ app_main.o: \
 
 /home/qinxueyi/esp/esp-idf/components/log/include/esp_log_internal.h:
 
-/home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_compat.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_compat.h:
 
-/home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_defs.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_defs.h:
 
-/home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_types.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_types.h:
 
-/home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_config.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_config.h:
 
-/home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_list.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_list.h:
 
-/home/qinxueyi/esp/esp-aliyun/iotkit-embedded/infra/infra_compat.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/iotkit-embedded/infra/infra_compat.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/components/ota_handle/ota_solo.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/components/ota_handle/ota_solo.h:
 
-/home/qinxueyi/esp/esp-aliyun/conn_mgr/conn_mgr.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/conn_mgr/conn_mgr.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_event/include/esp_event_loop.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_event/include/esp_event.h:
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/main/./app_main.c:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/main/./app_main.c:

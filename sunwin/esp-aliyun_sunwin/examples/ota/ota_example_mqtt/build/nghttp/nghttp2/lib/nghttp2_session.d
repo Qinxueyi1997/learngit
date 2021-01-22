@@ -17,7 +17,7 @@ nghttp2/lib/nghttp2_session.o: \
  /home/qinxueyi/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_pq.h \
  /home/qinxueyi/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_callbacks.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_helper.h \
  /home/qinxueyi/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_net.h \
  /home/qinxueyi/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_priority_spec.h \
@@ -59,7 +59,7 @@ nghttp2/lib/nghttp2_session.o: \
 
 /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_helper.h:
 

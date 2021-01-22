@@ -1,7 +1,7 @@
 src/transports/protocomm_console.o: \
  /home/qinxueyi/esp/esp-idf/components/protocomm/src/transports/protocomm_console.c \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/qinxueyi/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/qinxueyi/esp/esp-idf/components/console/esp_console.h \
@@ -55,7 +55,7 @@ src/transports/protocomm_console.o: \
 
 /home/qinxueyi/esp/esp-idf/components/log/include/esp_log.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 

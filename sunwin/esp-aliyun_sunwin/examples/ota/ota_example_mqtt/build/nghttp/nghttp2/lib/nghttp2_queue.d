@@ -5,7 +5,7 @@ nghttp2/lib/nghttp2_queue.o: \
  /home/qinxueyi/esp/esp-idf/components/nghttp/nghttp2/lib/includes/nghttp2/nghttp2.h \
  /home/qinxueyi/esp/esp-idf/components/nghttp/port/include/nghttp2/nghttp2ver.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h
 
 /home/qinxueyi/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_queue.h:
 
@@ -17,5 +17,5 @@ nghttp2/lib/nghttp2_queue.o: \
 
 /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 /home/qinxueyi/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_queue.c:

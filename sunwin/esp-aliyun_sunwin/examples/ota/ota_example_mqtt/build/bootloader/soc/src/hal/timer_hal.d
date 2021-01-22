@@ -1,7 +1,7 @@
 src/hal/timer_hal.o: \
  /home/qinxueyi/esp/esp-idf/components/soc/src/hal/timer_hal.c \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/hal/timer_hal.h \
  /home/qinxueyi/esp/esp-idf/components/soc/esp32/include/hal/timer_ll.h \
  /home/qinxueyi/esp/esp-idf/components/soc/include/hal/timer_types.h \
@@ -15,7 +15,7 @@ src/hal/timer_hal.o: \
 
 /home/qinxueyi/esp/esp-idf/components/xtensa/include/esp_attr.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/bootloader/../include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/soc/include/hal/timer_hal.h:
 

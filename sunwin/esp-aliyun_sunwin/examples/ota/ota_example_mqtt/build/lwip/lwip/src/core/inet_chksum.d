@@ -6,7 +6,7 @@ lwip/src/core/inet_chksum.o: \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/sys/time.h \
  /home/qinxueyi/esp/esp-idf/components/vfs/include/sys/ioctl.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_task.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/qinxueyi/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
@@ -76,7 +76,7 @@ lwip/src/core/inet_chksum.o: \
 
 /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_task.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 

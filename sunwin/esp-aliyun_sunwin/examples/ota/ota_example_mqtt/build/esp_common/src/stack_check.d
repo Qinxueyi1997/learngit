@@ -1,6 +1,6 @@
 src/stack_check.o: \
  /home/qinxueyi/esp/esp-idf/components/esp_common/src/stack_check.c \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/qinxueyi/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -8,7 +8,7 @@ src/stack_check.o: \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_idf_version.h
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 
 /home/qinxueyi/esp/esp-idf/components/esp_common/include/esp_system.h:
 

@@ -13,7 +13,7 @@ src/gdbstub.o: \
  /home/qinxueyi/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
  /home/qinxueyi/esp/esp-idf/components/esp_gdbstub/esp32/gdbstub_target_config.h \
  /home/qinxueyi/esp/esp-idf/components/esp_gdbstub/private_include/esp_gdbstub_common.h \
- /home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h
+ /home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h
 
 /home/qinxueyi/esp/esp-idf/components/esp_gdbstub/include/esp_gdbstub.h:
 
@@ -41,5 +41,5 @@ src/gdbstub.o: \
 
 /home/qinxueyi/esp/esp-idf/components/esp_gdbstub/private_include/esp_gdbstub_common.h:
 
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
+/home/qinxueyi/learngit/sunwin/esp-aliyun_sunwin/examples/ota/ota_example_mqtt/build/include/sdkconfig.h:
 /home/qinxueyi/esp/esp-idf/components/esp_gdbstub/src/gdbstub.c:
