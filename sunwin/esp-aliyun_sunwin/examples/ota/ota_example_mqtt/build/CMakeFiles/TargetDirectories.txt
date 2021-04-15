@@ -1,2 +1,0 @@
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/CMakeFiles/rebuild_cache.dir
-/home/qinxueyi/esp/esp-aliyun/examples/ota/ota_example_mqtt/build/CMakeFiles/edit_cache.dir
