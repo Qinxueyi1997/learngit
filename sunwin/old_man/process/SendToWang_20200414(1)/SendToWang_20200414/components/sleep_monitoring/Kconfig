@@ -1,9 +1,0 @@
-menu "SleepMonUtils"
-
-    config SLEEPMON_ENABLE
-        bool "Enable SleepMonitoring"
-        default "y"
-        help
-            Sleep monitoring by ahu university.
-
-endmenu

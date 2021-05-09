@@ -1,5 +1,0 @@
-source "/home/qinxueyi/esp/esp-idf/components/app_update/Kconfig.projbuild"
-source "/home/qinxueyi/esp/esp-idf/components/bootloader/Kconfig.projbuild"
-source "/home/qinxueyi/esp/esp-idf/components/esptool_py/Kconfig.projbuild"
-source "/home/qinxueyi/esp_new/esp/adc1_suanfa_time_low_power_ota_ceshi/main/Kconfig.projbuild"
-source "/home/qinxueyi/esp/esp-idf/components/partition_table/Kconfig.projbuild"
